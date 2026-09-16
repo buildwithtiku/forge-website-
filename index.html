@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forge — Build Yourself.</title>
+  <meta name="description" content="Forge is a self-improvement platform for teenagers to build a better physique, confidence, discipline, and daily habits.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Scroll Reset Before Render -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <script type="module" src="/src/js/scroll-reset.js"></script>
+
+  <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+
+  <!-- ==================================================
+       STICKY MINIMAL NAVIGATION
+  ================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+        <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+          <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-wordmark">FORGE</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="/" class="nav-link is-active">Home</a>
+        <a href="/features" class="nav-link">Features</a>
+        <a href="/how-it-works" class="nav-link">How It Works</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/download.html" class="btn btn-primary" id="nav-cta" data-download-cta>
+          <span>DOWNLOAD FORGE</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link is-active">Home</a>
+      <a href="/features" class="mobile-nav-link">Features</a>
+      <a href="/how-it-works" class="mobile-nav-link">How It Works</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/faq" class="mobile-nav-link">FAQ</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="/download.html" class="btn btn-primary mobile-drawer-cta" style="width: 100%;" data-download-cta>
+        <span>DOWNLOAD FORGE</span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================================================
+         SCENE 01 — HERO (CINEMATIC INTRO)
+    ================================================== -->
+    <section class="section section-hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-copy-col reveal">
+            <span class="eyebrow">FOR THE PERSON YOU'RE BECOMING.</span>
+            <h1 class="headline-hero">
+              BUILD A<br>
+              BETTER<br>
+              VERSION<br>
+              OF YOU.
+            </h1>
+            <div class="body-lead" style="display: flex; flex-direction: column; gap: 2px;">
+              <span>Build your physique.</span>
+              <span>Build your confidence.</span>
+              <span>Build your discipline.</span>
+              <span style="color: #FFFFFF; font-weight: 600;">Build yourself.</span>
+            </div>
+            <div class="hero-cta-group">
+              <a href="/download.html" class="btn btn-primary" id="hero-primary-cta" data-download-cta>
+                <span>DOWNLOAD FORGE</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a href="#change-track" class="btn btn-secondary" id="scroll-to-change">
+                <span>EXPLORE FORGE</span>
+                <span class="btn-down-arrow" aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Product UI in Obsidian Frame -->
+          <div class="hero-device-col reveal">
+            <div class="product-visual-wrapper">
+              <div class="device-frame-wrapper">
+                <div class="device-phone">
+                <div class="device-inner">
+                  
+                  <div class="device-status-bar">
+                    <span>9:41</span>
+                    <div class="device-speaker-notch"></div>
+                    <div class="device-status-icons">
+                      <span>5G</span>
+                      <span>100%</span>
+                    </div>
+                  </div>
+
+                  <!-- Authentic Live Forge Daily Screen -->
+                  <div class="app-screen-content">
+                    
+                    <div class="app-header">
+                      <div>
+                        <p class="app-date">WEDNESDAY, SEP 16</p>
+                        <h2 class="app-title">FORGE</h2>
+                      </div>
+                      <div class="app-header-icons">
+                        <span class="demo-indicator">DEMO VIEW</span>
+                        <div class="app-icon-pill" title="Coach">✨</div>
+                        <div class="app-icon-pill" title="Profile">●</div>
+                      </div>
+                    </div>
+
+                    <!-- Daily System Score -->
+                    <div class="app-tile">
+                      <div class="score-head">
+                        <div>
+                          <span class="score-meta-label">System Readiness</span>
+                          <div class="score-number">84 <span>/100</span></div>
+                        </div>
+                        <span class="score-tag">STRONG</span>
+                      </div>
+                      <div class="app-progress-label">
+                        <span>Today's Progress</span>
+                        <span>82%</span>
+                      </div>
+                      <div class="app-progress-bar">
+                        <div class="app-progress-fill" style="width: 82%;"></div>
+                      </div>
+                    </div>
+
+                    <!-- Today's Workout Routine -->
+                    <div class="app-workout-tile">
+                      <div class="workout-tagline">
+                        <span class="app-date">PHYSIQUE • TODAY</span>
+                        <span class="app-badge-done">READY</span>
+                      </div>
+                      <div class="workout-name">Upper Body Strength & Core</div>
+                      <div class="workout-details">
+                        <span>38 MIN</span>
+                        <span>•</span>
+                        <span>4 MOVEMENTS</span>
+                      </div>
+                      <div class="app-row-item">
+                        <span>Dumbbell Flat Bench</span>
+                        <span class="app-badge-done">3 × 10</span>
+                      </div>
+                      <div class="app-row-item">
+                        <span>Incline Dumbbell Fly</span>
+                        <span class="app-badge-done">3 × 12</span>
+                      </div>
+                    </div>
+
+                    <!-- Twin Metrics: Confidence Drill & Streak -->
+                    <div class="app-twin-grid">
+                      <div class="app-mini-card">
+                        <div class="mini-card-title">Confidence</div>
+                        <div class="mini-card-val">Drill Done ✓</div>
+                        <div class="mini-card-sub">Posture & Voice</div>
+                      </div>
+                      <div class="app-mini-card">
+                        <div class="mini-card-title">Discipline</div>
+                        <div class="mini-card-val">14 Days</div>
+                        <div class="mini-card-sub">Consistent streak</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ==================================================
+         SCENE 02 — SCROLL INTRO: "YOU WANT TO CHANGE"
+    ================================================== -->
+    <section class="change-track" id="change-track">
+      <div class="container change-stage">
+        <div class="change-content-wrap">
+          
+          <span class="eyebrow eyebrow-accent">THE INTENTION</span>
+          
+          <h2 class="story-headline">
+            YOU WANT TO CHANGE.
+          </h2>
+
+          <div class="change-steps-list">
+            <p class="story-step change-step" data-step="0">Your body.</p>
+            <p class="story-step change-step" data-step="1">Your confidence.</p>
+            <p class="story-step change-step" data-step="2">Your discipline.</p>
+            <p class="story-step change-step" data-step="3">Your habits.</p>
+            <p class="story-step change-step" data-step="4">Your life.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 03 — THE PROBLEM: "STARTING OVER"
+    ================================================== -->
+    <section class="problem-track" id="problem-track">
+      <div class="container problem-stage">
+        <div class="problem-sequence-wrap">
+          
+          <span class="eyebrow">THE CYCLE</span>
+
+          <h2 class="story-headline headline-section" style="margin-top: var(--space-2); margin-bottom: var(--space-6);">
+            BUT WHERE DO YOU START?
+          </h2>
+
+          <div class="cycle-statements-wrap">
+            <p class="pause-statement" id="pause-monday">YOU START MONDAY.</p>
+            <p class="pause-statement" id="pause-wednesday">MISS WEDNESDAY.</p>
+            <p class="pause-statement" id="pause-next-monday">START AGAIN NEXT MONDAY.</p>
+          </div>
+
+          <div class="problem-narrative-block" id="problem-narrative">
+            <div class="body-lead" style="color: var(--color-text-secondary);">
+              <p>You've watched the videos.</p>
+              <p>Saved the routines.</p>
+              <p>Made the plans.</p>
+              <p style="margin-top: var(--space-3); color: #FFFFFF;">
+                But knowing what to do and actually doing it are different things.
+              </p>
+            </div>
+
+            <div style="margin-top: var(--space-4);">
+              <p class="eyebrow" style="margin-bottom: var(--space-1); color: var(--color-text-muted);">
+                THE REALITY
+              </p>
+              <p class="headline-medium" style="color: #FFFFFF;">
+                YOU DON'T NEED MORE INFORMATION.<br>
+                YOU NEED A SYSTEM.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 04 — MEET FORGE
+    ================================================== -->
+    <section class="section meet-section" id="meet-forge">
+      <div class="container">
+        <div class="meet-grid">
+          
+          <div class="meet-copy reveal">
+            <span class="eyebrow">MEET FORGE.</span>
+            <h2 class="headline-section" style="margin: var(--space-4) 0 var(--space-6);">
+              ONE PLACE<br>
+              TO BUILD<br>
+              YOURSELF.
+            </h2>
+            <p class="body-lead" style="max-width: 480px;">
+              Forge turns the person you want to become into the actions you take every day.
+            </p>
+            <div style="margin-top: var(--space-8);">
+              <a href="#pillars-track" class="btn btn-primary">
+                <span>Explore The System</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product Visualization -->
+          <div class="meet-visual reveal">
+            <div class="product-visual-wrapper">
+              <div class="device-frame-wrapper">
+                <div class="device-phone">
+                <div class="device-inner">
+                  
+                  <div class="device-status-bar">
+                    <span>9:41</span>
+                    <div class="device-speaker-notch"></div>
+                    <div class="device-status-icons">
+                      <span>5G</span>
+                      <span>100%</span>
+                    </div>
+                  </div>
+
+                  <div class="app-screen-content">
+                    <div class="app-header">
+                      <div>
+                        <p class="app-date">SELF-IMPROVEMENT OS</p>
+                        <h3 class="app-title">DAILY FRAMEWORK</h3>
+                      </div>
+                      <span class="score-tag">CONNECTED</span>
+                    </div>
+
+                    <div class="app-workout-tile">
+                      <div class="workout-tagline">
+                        <span class="app-date">PILLAR 01</span>
+                        <span class="app-badge-done">PHYSIQUE</span>
+                      </div>
+                      <div class="workout-name">Structured training & progressive overload</div>
+                      <div class="workout-details"><span>NO GUESSWORK IN THE GYM</span></div>
+                    </div>
+
+                    <div class="app-workout-tile">
+                      <div class="workout-tagline">
+                        <span class="app-date">PILLAR 02</span>
+                        <span class="app-badge-done">CONFIDENCE</span>
+                      </div>
+                      <div class="workout-name">Posture, vocal clarity & daily challenges</div>
+                      <div class="workout-details"><span>BUILT FROM THE INSIDE OUT</span></div>
+                    </div>
+
+                    <div class="app-workout-tile">
+                      <div class="workout-tagline">
+                        <span class="app-date">PILLAR 03</span>
+                        <span class="app-badge-done">DISCIPLINE</span>
+                      </div>
+                      <div class="workout-name">Daily non-negotiables & habit streak</div>
+                      <div class="workout-details"><span>DOING WHAT YOU SAID YOU'D DO</span></div>
+                    </div>
+
+                    <div class="app-workout-tile">
+                      <div class="workout-tagline">
+                        <span class="app-date">PILLAR 04</span>
+                        <span class="app-badge-done">GROWTH</span>
+                      </div>
+                      <div class="workout-name">Weekly metrics & visible momentum</div>
+                      <div class="workout-details"><span>TRACKING WHAT YOU'RE BECOMING</span></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ==================================================
+         SCENE 05 — THE FOUR PILLARS (STICKY INTERACTIVE)
+    ================================================== -->
+    <section class="pillars-track" id="pillars-track">
+      <div class="container pillars-stage">
+        
+        <div class="pillars-header">
+          <span class="eyebrow">THE CORE TRANSFORMATION</span>
+          <h2 class="headline-section" style="margin-top: var(--space-2);">
+            WHAT ARE YOU BUILDING?
+          </h2>
+        </div>
+
+        <div class="pillars-stage-grid">
+          
+          <!-- Sticky Narrative Sequence -->
+          <div class="pillars-text-col">
+            
+            <!-- Pillar 1: PHYSIQUE -->
+            <div class="pillar-story-item is-active" data-pillar="0">
+              <p class="pillar-num">PILLAR 01</p>
+              <h3 class="pillar-title">PHYSIQUE</h3>
+              <p class="pillar-desc">
+                Build strength. Move better. Take care of your body.
+              </p>
+            </div>
+
+            <!-- Pillar 2: CONFIDENCE -->
+            <div class="pillar-story-item" data-pillar="1">
+              <p class="pillar-num">PILLAR 02</p>
+              <h3 class="pillar-title">CONFIDENCE</h3>
+              <p class="pillar-desc">
+                Become more comfortable with who you are.
+              </p>
+            </div>
+
+            <!-- Pillar 3: DISCIPLINE -->
+            <div class="pillar-story-item" data-pillar="2">
+              <p class="pillar-num">PILLAR 03</p>
+              <h3 class="pillar-title">DISCIPLINE</h3>
+              <p class="pillar-desc">
+                Do what you said you'd do.
+              </p>
+            </div>
+
+            <!-- Pillar 4: GROWTH -->
+            <div class="pillar-story-item" data-pillar="3">
+              <p class="pillar-num">PILLAR 04</p>
+              <h3 class="pillar-title">GROWTH</h3>
+              <p class="pillar-desc">
+                Keep becoming better.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Pinned Phone Mockup Morphing with Active Pillar -->
+          <div class="pillars-device-col">
+            <div class="product-visual-wrapper">
+              <div class="device-frame-wrapper">
+                <div class="device-phone">
+                <div class="device-inner">
+                  
+                  <div class="device-status-bar">
+                    <span>9:41</span>
+                    <div class="device-speaker-notch"></div>
+                    <div class="device-status-icons">
+                      <span>5G</span>
+                      <span>100%</span>
+                    </div>
+                  </div>
+
+                  <div class="app-screen-content">
+                    
+                    <!-- Screen 1: PHYSIQUE -->
+                    <div class="pillar-screen-view is-visible" data-pillar-screen="0">
+                      <div class="app-header">
+                        <div>
+                          <p class="app-date">PILLAR 01 • PHYSIQUE</p>
+                          <h4 class="app-title">STRENGTH</h4>
+                        </div>
+                        <span class="score-tag">LIVE WORKOUT</span>
+                      </div>
+
+                      <div class="app-workout-tile">
+                        <span class="app-date">ACTIVE EXERCISE</span>
+                        <div class="workout-name">Incline Dumbbell Press</div>
+                        <div class="workout-details">
+                          <span>26 KG PER HAND</span>
+                          <span>•</span>
+                          <span>10 REPS</span>
+                        </div>
+                        <div class="app-progress-bar" style="margin-top: 6px;">
+                          <div class="app-progress-fill" style="width: 66%;"></div>
+                        </div>
+                      </div>
+
+                      <div class="app-tile">
+                        <div class="app-row-item">
+                          <span>Rest Timer</span>
+                          <span class="app-badge-done">01:15 REMAINING</span>
+                        </div>
+                        <div class="app-row-item">
+                          <span>Progressive Load</span>
+                          <span class="app-badge-done">+2.5 KG VS LAST WEEK</span>
+                        </div>
+                        <div class="app-row-item">
+                          <span>Next Exercise</span>
+                          <span class="app-badge-done">Lateral Dumbbell Raise</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Screen 2: CONFIDENCE -->
+                    <div class="pillar-screen-view" data-pillar-screen="1">
+                      <div class="app-header">
+                        <div>
+                          <p class="app-date">PILLAR 02 • CONFIDENCE</p>
+                          <h4 class="app-title">PRESENCE</h4>
+                        </div>
+                        <span class="score-tag">DAILY DRILL</span>
+                      </div>
+
+                      <div class="app-tile">
+                        <div class="score-head">
+                          <div>
+                            <span class="score-meta-label">Posture & Voice</span>
+                            <div class="score-number">Done <span>✓</span></div>
+                          </div>
+                          <span class="score-tag">DAY 14</span>
+                        </div>
+                        <div class="app-progress-label">
+                          <span>Focus Drill Completion</span>
+                          <span>100%</span>
+                        </div>
+                        <div class="app-progress-bar">
+                          <div class="app-progress-fill" style="width: 100%;"></div>
+                        </div>
+                      </div>
+
+                      <div class="app-workout-tile">
+                        <span class="app-date">CONFIDENCE CHALLENGE</span>
+                        <div class="workout-name">Eye Contact & Clear Speech</div>
+                        <div class="workout-details">
+                          <span>PRACTICE IN SOCIAL INTERACTIONS</span>
+                        </div>
+                        <div class="app-row-item">
+                          <span>State</span>
+                          <span class="app-badge-done">CALM & GROUNDED</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Screen 3: DISCIPLINE -->
+                    <div class="pillar-screen-view" data-pillar-screen="2">
+                      <div class="app-header">
+                        <div>
+                          <p class="app-date">PILLAR 03 • DISCIPLINE</p>
+                          <h4 class="app-title">HABITS</h4>
+                        </div>
+                        <span class="score-tag">14 DAYS</span>
+                      </div>
+
+                      <div class="app-tile">
+                        <div class="score-head">
+                          <div>
+                            <span class="score-meta-label">Streak Adherence</span>
+                            <div class="score-number">14 <span>Days</span></div>
+                          </div>
+                          <span class="score-tag">PERFECT</span>
+                        </div>
+                        <div class="app-progress-label">
+                          <span>Daily Non-Negotiables</span>
+                          <span>4 / 4 COMPLETE</span>
+                        </div>
+                        <div class="app-progress-bar">
+                          <div class="app-progress-fill" style="width: 100%;"></div>
+                        </div>
+                      </div>
+
+                      <div class="app-workout-tile">
+                        <span class="app-date">DAILY ACTIONS</span>
+                        <div class="app-row-item">
+                          <span>Morning Hydration (500ml)</span>
+                          <span class="app-badge-done">✓ DONE</span>
+                        </div>
+                        <div class="app-row-item">
+                          <span>Daily Training Session</span>
+                          <span class="app-badge-done">✓ DONE</span>
+                        </div>
+                        <div class="app-row-item">
+                          <span>Night Screen Shutdown (22:30)</span>
+                          <span class="app-badge-done">SCHEDULED</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Screen 4: GROWTH -->
+                    <div class="pillar-screen-view" data-pillar-screen="3">
+                      <div class="app-header">
+                        <div>
+                          <p class="app-date">PILLAR 04 • GROWTH</p>
+                          <h4 class="app-title">PROGRESS</h4>
+                        </div>
+                        <span class="score-tag">+8 PTS</span>
+                      </div>
+
+                      <div class="app-tile">
+                        <div class="score-head">
+                          <div>
+                            <span class="score-meta-label">Total System Score</span>
+                            <div class="score-number">84 <span>/100</span></div>
+                          </div>
+                          <span class="score-tag">UPWARD</span>
+                        </div>
+                        <div class="app-progress-label">
+                          <span>Monthly Trajectory</span>
+                          <span>+12% DISCIPLINE</span>
+                        </div>
+                        <div class="app-progress-bar">
+                          <div class="app-progress-fill" style="width: 84%;"></div>
+                        </div>
+                      </div>
+
+                      <div class="app-workout-tile">
+                        <span class="app-date">BECOMING BETTER</span>
+                        <div class="app-row-item">
+                          <span>Workouts Finished</span>
+                          <span class="app-badge-done">16 / 16 SESSIONS</span>
+                        </div>
+                        <div class="app-row-item">
+                          <span>Confidence Score</span>
+                          <span class="app-badge-done">88 / 100</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ==================================================
+         SCENE 06 — FEATURES PREVIEW
+    ================================================== -->
+    <section class="section features-preview-section" id="features-preview">
+      <div class="container">
+        
+        <div class="reveal" style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <span class="eyebrow eyebrow-accent">CAPABILITIES</span>
+          <h2 class="headline-section" style="margin: var(--space-3) 0 var(--space-4);">
+            EVERYTHING YOU NEED<br>
+            TO BUILD YOURSELF.
+          </h2>
+          <p class="body-lead">
+            Forge brings the daily actions behind fitness, confidence, discipline and recovery into one connected place.
+          </p>
+        </div>
+
+        <div class="features-preview-grid reveal">
+          
+          <!-- Card 1: Physique -->
+          <div class="feature-preview-card">
+            <div class="feature-preview-top">
+              <span class="feature-preview-tag">01 • PHYSIQUE</span>
+              <h3 class="feature-preview-title">Progressive Strength</h3>
+              <p class="feature-preview-desc">
+                Structured 4-movement sessions with auto-calculated load increases (+2.5 kg). No gym confusion.
+              </p>
+            </div>
+            <div class="feature-preview-footer">
+              <span class="feature-preview-pill">STRENGTH & HYPERTROPHY</span>
+              <span class="app-badge-done">AUTOMATED</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Nutrition -->
+          <div class="feature-preview-card">
+            <div class="feature-preview-top">
+              <span class="feature-preview-tag">02 • NUTRITION</span>
+              <h3 class="feature-preview-title">Frictionless Fuel</h3>
+              <p class="feature-preview-desc">
+                Daily protein targets, calories, and hydration tracking with fast 30-second logging.
+              </p>
+            </div>
+            <div class="feature-preview-footer">
+              <span class="feature-preview-pill">PROTEIN & HYDRATION</span>
+              <span class="app-badge-done">QUICK LOG</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Recovery -->
+          <div class="feature-preview-card">
+            <div class="feature-preview-top">
+              <span class="feature-preview-tag">03 • RECOVERY</span>
+              <h3 class="feature-preview-title">Readiness Baseline</h3>
+              <p class="feature-preview-desc">
+                Morning composite recovery score (84/100) and rest timers to adapt load and prevent burnout.
+              </p>
+            </div>
+            <div class="feature-preview-footer">
+              <span class="feature-preview-pill">SLEEP & READINESS</span>
+              <span class="app-badge-done">84/100 STRONG</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Confidence -->
+          <div class="feature-preview-card">
+            <div class="feature-preview-top">
+              <span class="feature-preview-tag">04 • CONFIDENCE</span>
+              <h3 class="feature-preview-title">Presence & Voice</h3>
+              <p class="feature-preview-desc">
+                Daily posture exercises, eye contact challenges, and vocal projection to build quiet self-respect.
+              </p>
+            </div>
+            <div class="feature-preview-footer">
+              <span class="feature-preview-pill">MINDSET CHALLENGES</span>
+              <span class="app-badge-done">DAILY DRILL</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Discipline -->
+          <div class="feature-preview-card">
+            <div class="feature-preview-top">
+              <span class="feature-preview-tag">05 • DISCIPLINE</span>
+              <h3 class="feature-preview-title">Daily Non-Negotiables</h3>
+              <p class="feature-preview-desc">
+                Keep small promises to yourself every day with unbreakable streak tracking and routines.
+              </p>
+            </div>
+            <div class="feature-preview-footer">
+              <span class="feature-preview-pill">HABIT ADHERENCE</span>
+              <span class="app-badge-done">14-DAY STREAK</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Growth -->
+          <div class="feature-preview-card">
+            <div class="feature-preview-top">
+              <span class="feature-preview-tag">06 • GROWTH</span>
+              <h3 class="feature-preview-title">Visible Momentum</h3>
+              <p class="feature-preview-desc">
+                Watch physical strength and personal discipline compound month over month instead of resetting.
+              </p>
+            </div>
+            <div class="feature-preview-footer">
+              <span class="feature-preview-pill">MONTHLY COMPOUNDING</span>
+              <span class="app-badge-done">+12% MOMENTUM</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="reveal" style="text-align: center; margin-top: var(--space-8);">
+          <a href="/features" class="btn btn-secondary" style="padding: 1rem 2rem;">
+            <span>EXPLORE ALL FEATURES</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 07 — HOW IT WORKS
+    ================================================== -->
+    <section class="section how-it-works-section" id="how-it-works">
+      <div class="container">
+        
+        <div class="reveal" style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <span class="eyebrow eyebrow-accent">THE FRAMEWORK</span>
+          <h2 class="headline-section" style="margin: var(--space-3) 0 var(--space-4);">
+            HOW IT WORKS.
+          </h2>
+          <p class="body-lead">
+            From who you want to become to the actions you take today.
+          </p>
+        </div>
+
+        <!-- 4-Stage Progression Flow -->
+        <div class="how-it-works-flow reveal">
+          
+          <div class="flow-step-card">
+            <span class="flow-step-num">01</span>
+            <h3 class="flow-step-title">GOAL</h3>
+            <p class="flow-step-desc">
+              Choose what you want to build: physique, confidence, discipline, or total self-improvement.
+            </p>
+            <span class="flow-step-arrow" aria-hidden="true">→</span>
+          </div>
+
+          <div class="flow-step-card">
+            <span class="flow-step-num">02</span>
+            <h3 class="flow-step-title">PLAN</h3>
+            <p class="flow-step-desc">
+              Receive structured daily workouts, clear protein targets, and core non-negotiable habits.
+            </p>
+            <span class="flow-step-arrow" aria-hidden="true">→</span>
+          </div>
+
+          <div class="flow-step-card">
+            <span class="flow-step-num">03</span>
+            <h3 class="flow-step-title">DAILY ACTIONS</h3>
+            <p class="flow-step-desc">
+              Execute small, manageable actions throughout the day. Check off non-negotiables with zero friction.
+            </p>
+            <span class="flow-step-arrow" aria-hidden="true">→</span>
+          </div>
+
+          <div class="flow-step-card">
+            <span class="flow-step-num">04</span>
+            <h3 class="flow-step-title">PROGRESS</h3>
+            <p class="flow-step-desc">
+              Review your 28-day adherence matrix. Visible compounding destroys the urge to give up.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Connected Daily Timeline -->
+        <div class="container-editorial how-it-works-timeline-block">
+          <div class="reveal" style="text-align: center; margin-bottom: var(--space-10);">
+            <span class="eyebrow">A TYPICAL DAY</span>
+            <h3 class="headline-medium" style="margin-top: var(--space-2);">BECOMING BETTER HAPPENS EVERY DAY.</h3>
+          </div>
+
+          <div class="timeline-track-wrapper">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-step">
+              <span class="step-time">07:30</span>
+              <div class="step-node"></div>
+              <div class="step-content">
+                <h4 class="step-title">START</h4>
+                <p class="step-sub">Wake up, check readiness baseline (84/100) and day's focus.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <span class="step-time">08:00</span>
+              <div class="step-node"></div>
+              <div class="step-content">
+                <h4 class="step-title">HYDRATE</h4>
+                <p class="step-sub">First 500ml logged with one tap.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <span class="step-time">17:30</span>
+              <div class="step-node"></div>
+              <div class="step-content">
+                <h4 class="step-title">TRAIN</h4>
+                <p class="step-sub">Today's strength workout pre-loaded with progressive load targets (+2.5 kg).</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <span class="step-time">19:30</span>
+              <div class="step-node"></div>
+              <div class="step-content">
+                <h4 class="step-title">FUEL</h4>
+                <p class="step-sub">Protein, calories, and daily nutrition logged.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <span class="step-time">23:00</span>
+              <div class="step-node"></div>
+              <div class="step-content">
+                <h4 class="step-title">RECOVER</h4>
+                <p class="step-sub">Screen shutdown enforced. Tomorrow is already planned.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="reveal" style="text-align: center; margin-top: var(--space-8);">
+          <a href="/how-it-works" class="btn btn-secondary" style="padding: 1rem 2rem;">
+            <span>SEE HOW IT WORKS</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 08 — PROGRESS STORY
+    ================================================== -->
+    <section class="section progress-section" id="progress">
+      <div class="container">
+        
+        <div class="progress-header-block reveal">
+          <span class="eyebrow">PROGRESS.</span>
+          <h2 class="headline-section">
+            YOU WON'T NOTICE<br>
+            THE CHANGE<br>
+            EVERY DAY.
+          </h2>
+          <p class="headline-medium" style="color: var(--color-text-secondary); margin-top: var(--space-4);">
+            That's why you track it.
+          </p>
+        </div>
+
+        <div class="progress-grid reveal">
+          
+          <!-- Card 1: Adherence Matrix -->
+          <div class="progress-card">
+            <div class="progress-card-header">
+              <div>
+                <span class="card-label">Training & Habit Adherence</span>
+                <span class="demo-indicator" style="margin-left: 8px;">SAMPLE VIEW</span>
+              </div>
+              <span class="card-value">14 Days</span>
+            </div>
+            <p class="body-regular" style="margin-bottom: var(--space-4);">
+              28-day consistency pattern. Every point represents daily action taken.
+            </p>
+            <div class="activity-matrix" title="Activity Matrix">
+              <div class="matrix-dot active" title="Day 1"></div>
+              <div class="matrix-dot active" title="Day 2"></div>
+              <div class="matrix-dot active" title="Day 3"></div>
+              <div class="matrix-dot active" title="Day 4"></div>
+              <div class="matrix-dot active" title="Day 5"></div>
+              <div class="matrix-dot partial" title="Day 6"></div>
+              <div class="matrix-dot active" title="Day 7"></div>
+
+              <div class="matrix-dot active" title="Day 8"></div>
+              <div class="matrix-dot active" title="Day 9"></div>
+              <div class="matrix-dot active" title="Day 10"></div>
+              <div class="matrix-dot active" title="Day 11"></div>
+              <div class="matrix-dot active" title="Day 12"></div>
+              <div class="matrix-dot active" title="Day 13"></div>
+              <div class="matrix-dot active" title="Day 14"></div>
+
+              <div class="matrix-dot active" title="Day 15"></div>
+              <div class="matrix-dot active" title="Day 16"></div>
+              <div class="matrix-dot active" title="Day 17"></div>
+              <div class="matrix-dot active" title="Day 18"></div>
+              <div class="matrix-dot active" title="Day 19"></div>
+              <div class="matrix-dot partial" title="Day 20"></div>
+              <div class="matrix-dot active" title="Day 21"></div>
+
+              <div class="matrix-dot active" title="Day 22"></div>
+              <div class="matrix-dot active" title="Day 23"></div>
+              <div class="matrix-dot active" title="Day 24"></div>
+              <div class="matrix-dot active" title="Day 25"></div>
+              <div class="matrix-dot active" title="Day 26"></div>
+              <div class="matrix-dot active" title="Day 27"></div>
+              <div class="matrix-dot active" title="Day 28"></div>
+            </div>
+          </div>
+
+          <!-- Card 2: Composite System Trajectory -->
+          <div class="progress-card">
+            <div class="progress-card-header">
+              <div>
+                <span class="card-label">Composite System Score</span>
+                <span class="demo-indicator" style="margin-left: 8px;">SAMPLE VIEW</span>
+              </div>
+              <span class="card-value">84 / 100</span>
+            </div>
+            <p class="body-regular" style="margin-bottom: var(--space-4);">
+              Composite score derived from training load, sleep depth, hydration, and habit execution.
+            </p>
+            <div class="progress-meta-row">
+              <div class="meta-box">
+                <span class="meta-box-label">Strength</span>
+                <p class="meta-box-val">+12.5 kg</p>
+              </div>
+              <div class="meta-box">
+                <span class="meta-box-label">Avg Sleep</span>
+                <p class="meta-box-val">7.8 hrs</p>
+              </div>
+              <div class="meta-box">
+                <span class="meta-box-label">Hydration</span>
+                <p class="meta-box-val">2.8 L/day</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="reveal" style="margin-top: var(--space-12); text-align: center;">
+          <div class="body-lead" style="color: var(--color-text-secondary); max-width: 500px; margin: 0 auto;">
+            <p>One workout. One habit. One better choice. One more day.</p>
+            <p class="headline-medium" style="color: #FFFFFF; margin-top: var(--space-2);">
+              IT ADDS UP.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 09 — ABOUT PREVIEW (MANIFESTO)
+    ================================================== -->
+    <section class="section about-preview-section" id="about-preview">
+      <div class="container">
+        <div class="about-preview-card reveal">
+          <span class="eyebrow eyebrow-accent">WHY FORGE EXISTS</span>
+          <h3>
+            YOU DON'T NEED TO BECOME SOMEONE ELSE.<br>
+            <span style="color: var(--color-text-secondary); font-size: 0.85em;">YOU NEED TO BECOME THE PERSON YOU WANT TO BE.</span>
+          </h3>
+          <p class="body-lead" style="max-width: 600px; margin: var(--space-4) auto var(--space-8);">
+            No perfect routines. No overnight miracles. Just small actions repeated across normal days until they become real change.
+          </p>
+          <a href="/about" class="btn btn-secondary" style="padding: 1rem 2.2rem;">
+            <span>OUR STORY</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 10 — FAQ PREVIEW
+    ================================================== -->
+    <section class="home-faq-section" id="faq">
+      <div class="container">
+        
+        <div class="home-faq-header reveal">
+          <span class="eyebrow eyebrow-accent">QUESTIONS?</span>
+          <h2 class="headline-section" style="margin-top: var(--space-2);">
+            FREQUENTLY ASKED QUESTIONS.
+          </h2>
+          <p class="body-lead" style="margin-top: var(--space-3);">
+            Quick answers to help you understand how Forge works.
+          </p>
+        </div>
+
+        <div class="faq-container" id="home-faq-container">
+          
+          <!-- Q1 -->
+          <div class="faq-item is-open reveal">
+            <button type="button" class="faq-trigger" aria-expanded="true">
+              <span>What is Forge?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Forge is a daily self-improvement system designed to help you build yourself across four connected areas: <strong>Physique</strong>, <strong>Confidence</strong>, <strong>Discipline</strong>, and <strong>Growth</strong>.
+                  </p>
+                  <p>
+                    Instead of juggling multiple disjointed apps for workouts and habits, Forge connects them into one focused daily workflow.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Who is Forge for?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Forge is built for teenagers and young adults who want to get stronger, more confident, and stop restarting their fitness and habit routines every Monday.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Is Forge only a fitness app?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    No. While training is a core foundation, Forge connects progressive strength workouts with posture and vocal confidence drills, daily habit streaks, and sleep recovery.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can Forge help me build better habits?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. Forge organizes your day around 4 core non-negotiables (hydration, training, confidence drill, evening wind-down) so you build self-trust by keeping small daily promises.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Does Forge help with nutrition?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. We focus on the fundamentals: simple daily targets for protein, calories, and hydration with 30-second one-tap logs instead of complex recipe weighing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item reveal">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Where can I download Forge?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Forge is rolling out on iOS and Android. Use any "Download Forge" button on this site to join early access and receive immediate access upon release.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="home-faq-footer reveal">
+          <a href="/faq" class="btn btn-secondary">
+            <span>VIEW ALL QUESTIONS</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 10.5 — EMAIL CAPTURE: "STAY IN THE LOOP."
+    ================================================== -->
+    <section class="section stay-in-loop-section" id="stay-in-loop">
+      <div class="container">
+        <div class="loop-wrapper reveal">
+          <span class="eyebrow eyebrow-accent">GET UPDATES</span>
+          <h2 class="loop-headline">
+            STAY IN THE LOOP.
+          </h2>
+          <p class="loop-subtext" style="max-width: 580px; margin: 0 auto var(--space-6); color: var(--color-text-secondary); font-size: 1.0625rem; line-height: 1.6;">
+            Get updates as Forge grows — new features, improvements, and the journey ahead.
+          </p>
+
+          <div class="newsletter-form-wrap">
+            <form class="newsletter-form" id="newsletter-form" novalidate>
+              <input
+                type="email"
+                class="newsletter-input"
+                id="email-input"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+                aria-label="Your email address"
+              >
+              <button type="submit" class="btn btn-primary newsletter-btn" id="newsletter-submit-btn">
+                <span>GET UPDATES</span>
+              </button>
+            </form>
+            <div class="newsletter-feedback" id="newsletter-feedback" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SCENE 11 — FINAL CTA
+    ================================================== -->
+    <section class="section cta-section" id="get-started">
+      <div class="container">
+        <div class="cta-wrapper reveal">
+          <span class="eyebrow eyebrow-accent">START TODAY</span>
+          <h2 class="cta-headline">
+            READY<br>
+            TO BUILD<br>
+            YOURSELF?
+          </h2>
+          <p class="cta-copy">
+            You don't need to have everything figured out.<br>
+            You just need to start.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); width: 100%;">
+            <a href="/download.html" class="btn btn-primary" id="footer-cta-btn" style="padding: 1.1rem 2.2rem; font-size: 1.05rem;" data-download-cta>
+              <span>DOWNLOAD FORGE</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <!-- Secondary email option: NOT READY YET? [ Enter your email ] [ GET UPDATES ] -->
+            <div class="final-cta-secondary-wrap" style="margin-top: var(--space-6); width: 100%; max-width: 440px;">
+              <span style="font-size: 0.8125rem; font-family: var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted); display: block; margin-bottom: var(--space-2);">NOT READY YET?</span>
+              <form class="newsletter-form final-secondary-form" id="final-cta-form" novalidate style="display: flex; gap: var(--space-2); width: 100%;">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  id="final-email-input"
+                  name="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                  aria-label="Your email address"
+                  style="padding: 0.65rem 1rem; font-size: 0.875rem; background: rgba(255,255,255,0.03); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-sm); color: #fff; flex: 1;"
+                >
+                <button type="submit" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.8125rem; white-space: nowrap;">
+                  <span>GET UPDATES</span>
+                </button>
+              </form>
+              <div class="newsletter-feedback" id="final-newsletter-feedback" role="status" aria-live="polite" style="margin-top: 8px; font-size: 0.8125rem;"></div>
+            </div>
+
+            <p class="pillars-subtitle" style="margin-top: var(--space-4);">
+              FORGE · BUILD YOURSELF.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================
+       FOOTER
+  ================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Statement -->
+        <div class="footer-brand-col">
+          <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+            <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+              <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+              <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+            </svg>
+            <span class="brand-wordmark">FORGE</span>
+          </a>
+          <p class="footer-tagline">
+            BUILD YOURSELF.
+          </p>
+        </div>
+
+        <!-- Col 2: Explore -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">EXPLORE</h4>
+          <ul class="footer-links-list">
+            <li><a href="/" class="footer-link is-active">Home</a></li>
+            <li><a href="/features" class="footer-link">Features</a></li>
+            <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
+            <li><a href="/about" class="footer-link">About</a></li>
+            <li><a href="/faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Build -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">BUILD</h4>
+          <ul class="footer-links-list">
+            <li><a href="/download.html" class="footer-link" data-download-cta>Download Forge</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Stay Updated -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">STAY UPDATED</h4>
+          <form class="newsletter-form footer-newsletter-form" id="footer-newsletter-form" novalidate>
+            <div class="footer-input-group">
+              <input
+                type="email"
+                class="newsletter-input footer-newsletter-input"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+                aria-label="Your email address"
+              >
+              <button type="submit" class="btn btn-secondary footer-newsletter-btn">
+                <span>GET UPDATES</span>
+              </button>
+            </div>
+            <div class="newsletter-feedback footer-newsletter-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <span class="footer-bottom-brand">FORGE · BUILD YOURSELF.</span>
+        <span class="footer-bottom-copy">&copy; 2026 FORGE. ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

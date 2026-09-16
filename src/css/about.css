@@ -1,0 +1,535 @@
+/* ==================================================
+   FORGE ABOUT PAGE — EDITORIAL MANIFESTO
+   Minimal • Cinematic • Human • Intentional Spacing
+================================================== */
+
+@import "./reset.css";
+@import "./tokens.css";
+@import "./typography.css";
+@import "./components.css";
+
+/* Base Body Style */
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------
+   SECTION 1 — HERO (YOU WANT TO BECOME BETTER)
+-------------------------------------------------- */
+.about-hero {
+  padding-top: calc(var(--navbar-height, 92px) + var(--navbar-safe-gap, 80px));
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--color-border);
+  background: radial-gradient(circle at 50% 0%, #151515 0%, var(--color-bg) 75%);
+}
+
+.about-hero-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 960px;
+}
+
+.about-hero .headline-hero {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.about-hero-subheadline {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}
+
+.about-hero-cadence {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin-top: var(--space-4);
+  border-left: 2px solid #FFFFFF;
+  padding-left: var(--space-5);
+}
+
+.about-hero-cadence span {
+  display: block;
+}
+
+.about-hero-cadence span:last-child {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------
+   SECTION 2 — THE PROBLEM (YOU HAVE THE INFORMATION)
+-------------------------------------------------- */
+.about-problem-section {
+  padding: 120px 0;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-problem-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 960px;
+}
+
+.about-problem-headline {
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.info-cloud-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: var(--space-2) 0;
+}
+
+.info-tag {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+}
+
+.gap-statement-block {
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.gap-statement-text {
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------
+   SECTION 3 — WHY FORGE (NOT 10 DIFFERENT SYSTEMS)
+-------------------------------------------------- */
+.about-why-section {
+  padding: 120px 0;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-why-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 960px;
+}
+
+.about-why-headline {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.about-connected-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.connected-item {
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.connected-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.connected-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------
+   SECTION 4 — THE FOUR PILLARS (EDITORIAL SEQUENCE)
+-------------------------------------------------- */
+.about-pillars-section {
+  padding: 120px 0;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  height: auto;
+  min-height: auto;
+}
+
+.about-pillars-wrap {
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.about-pillars-header {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.pillars-editorial-sequence {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.pillar-seq-item {
+  display: grid;
+  grid-template-columns: 140px 1.8fr 1fr;
+  gap: clamp(32px, 4vw, 64px);
+  min-height: 160px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-border);
+  align-items: baseline;
+  transition: background-color var(--duration-fast) ease;
+}
+
+.pillar-seq-num {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: -0.02em;
+}
+
+.pillar-seq-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.pillar-seq-title {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.pillar-seq-desc {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.pillar-seq-meta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pillar-seq-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+  border: 1px solid var(--color-border);
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+}
+
+/* --------------------------------------------------
+   SECTION 5 — THE FORMULA (UNIFIED MEMORABLE SECTION)
+-------------------------------------------------- */
+.about-formula-section {
+  padding: 120px 0;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  height: auto;
+}
+
+.formula-card-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-10) var(--space-8);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 80%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
+}
+
+.formula-step {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: #FFFFFF;
+}
+
+.formula-arrow {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  margin: var(--space-2) 0;
+  line-height: 1;
+}
+
+.formula-supporting-copy {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------
+   SECTION 6 — BUILT FOR REAL LIFE
+-------------------------------------------------- */
+.about-real-life-section {
+  padding: 120px 0;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  height: auto;
+}
+
+.about-real-life-wrap {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: clamp(64px, 6vw, 96px);
+  align-items: start;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.real-life-title {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.real-life-copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+}
+
+.real-life-lead {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.real-life-highlight {
+  color: #FFFFFF;
+  font-weight: 700;
+  padding-left: var(--space-4);
+  border-left: 2px solid #FFFFFF;
+}
+
+/* --------------------------------------------------
+   SECTION 7 — WHO IT'S FOR
+-------------------------------------------------- */
+.about-audience-section {
+  padding: 120px 0;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--color-border);
+  height: auto;
+}
+
+.about-audience-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(64px, 6vw, 96px);
+  align-items: start;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.audience-title {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 600px;
+}
+
+.audience-sequence {
+  display: flex;
+  flex-direction: column;
+}
+
+.audience-qualities {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.audience-quality-item {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  line-height: 1.15;
+}
+
+.audience-closing {
+  margin-top: 56px;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.audience-closing-sub {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+}
+
+.audience-closing-emphasis {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+/* --------------------------------------------------
+   SECTION 8 — ABOUT FINAL POSTER & CTA
+-------------------------------------------------- */
+.about-poster-section {
+  padding-top: clamp(140px, 12vw, 180px);
+  padding-bottom: clamp(140px, 12vw, 180px);
+  background: radial-gradient(circle at 50% 50%, #161616 0%, var(--bg-primary) 85%);
+  text-align: center;
+  height: auto;
+}
+
+.about-poster-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.poster-lead {
+  font-size: clamp(1.2rem, 2.5vw, 1.85rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text-secondary);
+  line-height: 1.25;
+}
+
+.poster-headline {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: var(--space-2) 0;
+}
+
+.poster-brand-line {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .about-hero,
+  .about-problem-section,
+  .about-why-section,
+  .about-pillars-section,
+  .about-formula-section,
+  .about-real-life-section,
+  .about-audience-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-real-life-wrap,
+  .about-audience-wrap {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-connected-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pillar-seq-item {
+    grid-template-columns: 80px 1fr;
+    gap: var(--space-4);
+    min-height: auto;
+  }
+
+  .pillar-seq-meta {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-connected-box {
+    grid-template-columns: 1fr;
+  }
+
+  .formula-card-wrap {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .pillar-seq-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    padding: 28px 0;
+  }
+
+  .pillar-seq-meta {
+    grid-column: 1;
+  }
+}

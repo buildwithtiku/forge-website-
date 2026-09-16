@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Why Forge Exists | Forge</title>
+  <meta name="description" content="We built Forge because becoming better shouldn't feel like managing 10 different systems. Small actions. Repeated days. Real change.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Scroll Reset Before Render -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <script type="module" src="/src/js/scroll-reset.js"></script>
+
+  <link rel="stylesheet" href="/src/css/about.css">
+</head>
+<body>
+
+  <!-- ==================================================
+       STICKY MINIMAL NAVIGATION
+  ================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+        <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+          <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-wordmark">FORGE</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/features" class="nav-link">Features</a>
+        <a href="/how-it-works" class="nav-link">How It Works</a>
+        <a href="/about" class="nav-link is-active">About</a>
+        <a href="/faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/download.html" class="btn btn-primary" id="nav-cta" data-download-cta>
+          <span>DOWNLOAD FORGE</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <a href="/features" class="mobile-nav-link">Features</a>
+      <a href="/how-it-works" class="mobile-nav-link">How It Works</a>
+      <a href="/about" class="mobile-nav-link is-active">About</a>
+      <a href="/faq" class="mobile-nav-link">FAQ</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="/download.html" class="btn btn-primary mobile-drawer-cta" style="width: 100%;" data-download-cta>
+        <span>DOWNLOAD FORGE</span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================================================
+         SECTION 1 — HERO (YOU WANT TO BECOME BETTER)
+    ================================================== -->
+    <section class="about-hero" id="about-hero">
+      <div class="container">
+        <div class="about-hero-wrap reveal">
+          <span class="eyebrow eyebrow-accent">WHY FORGE EXISTS</span>
+          
+          <h1 class="headline-hero">
+            YOU WANT TO<br>
+            BECOME BETTER.
+          </h1>
+
+          <p class="about-hero-subheadline">
+            BUT KNOWING WHAT TO DO<br>
+            ISN'T THE HARD PART.
+          </p>
+
+          <div class="about-hero-cadence">
+            <span>The hard part is showing up.</span>
+            <span>Again.</span>
+            <span>And again.</span>
+            <span>And again.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 2 — THE PROBLEM (YOU HAVE THE INFORMATION)
+    ================================================== -->
+    <section class="about-problem-section" id="about-problem">
+      <div class="container">
+        <div class="about-problem-wrap reveal">
+          <span class="eyebrow">THE REALITY</span>
+          <h2 class="about-problem-headline">
+            YOU HAVE THE INFORMATION.
+          </h2>
+
+          <div class="info-cloud-grid">
+            <span class="info-tag">Workout plans.</span>
+            <span class="info-tag">Nutrition advice.</span>
+            <span class="info-tag">Habit trackers.</span>
+            <span class="info-tag">Motivation.</span>
+            <span class="info-tag">Self-improvement content.</span>
+          </div>
+
+          <p class="body-lead" style="color: var(--color-text-secondary); max-width: 680px;">
+            But information doesn't automatically become action.
+          </p>
+
+          <div class="gap-statement-block">
+            <p class="gap-statement-text">
+              THAT'S THE GAP FORGE WAS BUILT TO CLOSE.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 3 — WHY FORGE (NOT 10 DIFFERENT SYSTEMS)
+    ================================================== -->
+    <section class="about-why-section" id="why-forge">
+      <div class="container">
+        <div class="about-why-wrap reveal">
+          <span class="eyebrow eyebrow-accent">WHY FORGE</span>
+          <h2 class="about-why-headline">
+            WE BUILT FORGE<br>
+            TO MAKE THE JOURNEY<br>
+            SIMPLER.
+          </h2>
+
+          <p class="body-lead" style="color: var(--color-text-secondary); max-width: 720px;">
+            Your physique, confidence, discipline and growth are connected.<br>
+            Forge brings the daily actions behind them together.
+          </p>
+
+          <div class="about-connected-box">
+            <div class="connected-item">
+              <div class="connected-title">PHYSIQUE</div>
+              <div class="connected-sub">Training & Fuel</div>
+            </div>
+            <div class="connected-item">
+              <div class="connected-title">CONFIDENCE</div>
+              <div class="connected-sub">Presence & Voice</div>
+            </div>
+            <div class="connected-item">
+              <div class="connected-title">DISCIPLINE</div>
+              <div class="connected-sub">Daily Actions</div>
+            </div>
+            <div class="connected-item">
+              <div class="connected-title">GROWTH</div>
+              <div class="connected-sub">Visible Trajectory</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 4 — THE FOUR PILLARS (EDITORIAL SEQUENCE)
+    ================================================== -->
+    <section class="about-pillars-section" id="four-pillars">
+      <div class="container">
+        <div class="about-pillars-wrap reveal">
+          <div class="about-pillars-header">
+            <span class="eyebrow">THE FOUNDATION</span>
+            <h2 class="headline-section" style="margin-top: var(--space-2);">
+              FOUR PILLARS.
+            </h2>
+          </div>
+
+          <div class="pillars-editorial-sequence">
+            
+            <div class="pillar-seq-item">
+              <span class="pillar-seq-num">01</span>
+              <div class="pillar-seq-content">
+                <h3 class="pillar-seq-title">PHYSIQUE</h3>
+                <p class="pillar-seq-desc">
+                  Build a stronger, healthier body.
+                </p>
+              </div>
+              <div class="pillar-seq-meta">
+                <span class="pillar-seq-tag">STRENGTH & LOAD</span>
+              </div>
+            </div>
+
+            <div class="pillar-seq-item">
+              <span class="pillar-seq-num">02</span>
+              <div class="pillar-seq-content">
+                <h3 class="pillar-seq-title">CONFIDENCE</h3>
+                <p class="pillar-seq-desc">
+                  Build trust in yourself through progress.
+                </p>
+              </div>
+              <div class="pillar-seq-meta">
+                <span class="pillar-seq-tag">QUIET SELF-TRUST</span>
+              </div>
+            </div>
+
+            <div class="pillar-seq-item">
+              <span class="pillar-seq-num">03</span>
+              <div class="pillar-seq-content">
+                <h3 class="pillar-seq-title">DISCIPLINE</h3>
+                <p class="pillar-seq-desc">
+                  Learn to show up when motivation disappears.
+                </p>
+              </div>
+              <div class="pillar-seq-meta">
+                <span class="pillar-seq-tag">DAILY ACTIONS</span>
+              </div>
+            </div>
+
+            <div class="pillar-seq-item">
+              <span class="pillar-seq-num">04</span>
+              <div class="pillar-seq-content">
+                <h3 class="pillar-seq-title">GROWTH</h3>
+                <p class="pillar-seq-desc">
+                  Keep becoming more capable.
+                </p>
+              </div>
+              <div class="pillar-seq-meta">
+                <span class="pillar-seq-tag">VISIBLE TRAJECTORY</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 5 — THE FORMULA (UNIFIED MEMORABLE COMPOSITION)
+    ================================================== -->
+    <section class="about-formula-section" id="formula">
+      <div class="container">
+        <div class="formula-card-wrap reveal">
+          <span class="eyebrow eyebrow-accent" style="display: block; margin-bottom: var(--space-6);">THE FORMULA</span>
+
+          <p class="formula-step">SMALL ACTIONS.</p>
+          <p class="formula-arrow" aria-hidden="true">↓</p>
+          <p class="formula-step">REPEATED DAYS.</p>
+          <p class="formula-arrow" aria-hidden="true">↓</p>
+          <p class="formula-step" style="color: #FFFFFF;">REAL CHANGE.</p>
+
+          <p class="formula-supporting-copy">
+            "Change rarely happens in one dramatic moment.<br>
+            It happens quietly, through the things you repeat."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 6 — BUILT FOR REAL LIFE
+    ================================================== -->
+    <section class="about-real-life-section" id="real-life">
+      <div class="container">
+        <div class="about-real-life-wrap reveal">
+          <div>
+            <span class="eyebrow">HUMAN & HONEST</span>
+            <h2 class="real-life-title" style="margin-top: var(--space-2);">
+              BUILT FOR<br>
+              REAL LIFE.
+            </h2>
+          </div>
+
+          <div class="real-life-copy">
+            <p class="real-life-lead">
+              You will miss days.<br>
+              Your schedule will change.<br>
+              Motivation will disappear.
+            </p>
+            <p class="real-life-highlight">
+              The goal isn't perfection.<br>
+              The goal is to keep moving forward.
+            </p>
+            <p>
+              Forge is designed for ordinary, busy days with school, work, and low energy.
+            </p>
+            <p>
+              You don't need a flawless 4-hour routine. You need a system that keeps your momentum alive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 7 — WHO IT'S FOR
+    ================================================== -->
+    <section class="about-audience-section" id="who-its-for">
+      <div class="container">
+        <div class="about-audience-wrap reveal">
+          <div>
+            <span class="eyebrow eyebrow-accent">FOR THE ONES</span>
+            <h2 class="audience-title" style="margin-top: var(--space-2);">
+              WHO WANT MORE<br>
+              FROM THEMSELVES.
+            </h2>
+          </div>
+
+          <div class="audience-sequence">
+            <div class="audience-qualities">
+              <span class="audience-quality-item">Strong.</span>
+              <span class="audience-quality-item">Confident.</span>
+              <span class="audience-quality-item">Disciplined.</span>
+              <span class="audience-quality-item">Capable.</span>
+            </div>
+            <div class="audience-closing">
+              <span class="audience-closing-sub">Not someone else.</span>
+              <span class="audience-closing-emphasis">You.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 8 — FINAL POSTER & CTA (STRONGEST VISUAL MOMENT)
+    ================================================== -->
+    <section class="about-poster-section" id="about-final">
+      <div class="container">
+        <div class="about-poster-wrap reveal">
+          <p class="poster-lead">
+            YOU DON'T NEED<br>
+            TO BECOME SOMEONE ELSE.
+          </p>
+
+          <h2 class="poster-headline">
+            JUST BECOME<br>
+            STRONGER THAN<br>
+            YESTERDAY.
+          </h2>
+
+          <p class="poster-brand-line">
+            THAT'S FORGE.
+          </p>
+
+          <div style="margin-top: var(--space-8); display: flex; flex-direction: column; align-items: center; gap: var(--space-4);">
+            <a href="/download.html" class="btn btn-primary" style="padding: 1.15rem 2.4rem; font-size: 1.05rem;" data-download-cta>
+              <span>DOWNLOAD FORGE</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <!-- Secondary email option -->
+            <div style="margin-top: var(--space-6); width: 100%; max-width: 440px;">
+              <span style="font-size: 0.8125rem; font-family: var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted); display: block; margin-bottom: var(--space-2);">NOT READY YET?</span>
+              <form class="newsletter-form" id="about-newsletter-form" novalidate style="display: flex; gap: var(--space-2); width: 100%;">
+                <input
+                  type="email"
+                  class="newsletter-input"
+                  name="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                  aria-label="Your email address"
+                  style="padding: 0.65rem 1rem; font-size: 0.875rem; background: rgba(255,255,255,0.03); border: 1px solid var(--color-border); border-radius: var(--radius-sm); color: #fff; flex: 1;"
+                >
+                <button type="submit" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.8125rem; white-space: nowrap;">
+                  <span>GET UPDATES</span>
+                </button>
+              </form>
+              <div class="newsletter-feedback" role="status" aria-live="polite" style="margin-top: 8px; font-size: 0.8125rem;"></div>
+            </div>
+
+            <p class="pillars-subtitle" style="margin-top: var(--space-6);">
+              FORGE · BUILD YOURSELF.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================
+       FOOTER
+  ================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Statement -->
+        <div class="footer-brand-col">
+          <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+            <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+              <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+              <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+            </svg>
+            <span class="brand-wordmark">FORGE</span>
+          </a>
+          <p class="footer-tagline">
+            BUILD YOURSELF.
+          </p>
+        </div>
+
+        <!-- Col 2: Explore -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">EXPLORE</h4>
+          <ul class="footer-links-list">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/features" class="footer-link">Features</a></li>
+            <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
+            <li><a href="/about" class="footer-link is-active">About</a></li>
+            <li><a href="/faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Build -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">BUILD</h4>
+          <ul class="footer-links-list">
+            <li><a href="/download.html" class="footer-link" data-download-cta>Download Forge</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Stay Updated -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">STAY UPDATED</h4>
+          <form class="newsletter-form footer-newsletter-form" id="footer-newsletter-form" novalidate>
+            <div class="footer-input-group">
+              <input
+                type="email"
+                class="newsletter-input footer-newsletter-input"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+                aria-label="Your email address"
+              >
+              <button type="submit" class="btn btn-secondary footer-newsletter-btn">
+                <span>GET UPDATES</span>
+              </button>
+            </div>
+            <div class="newsletter-feedback footer-newsletter-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <span class="footer-bottom-brand">FORGE · BUILD YOURSELF.</span>
+        <span class="footer-bottom-copy">&copy; 2026 FORGE. ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initMobileNav } from '/src/js/mobile-nav.js';
+    import { initScrollReveal } from '/src/js/scroll-reveal.js';
+    import { initDownloadCTA } from '/src/js/download-cta.js';
+    import { initEmailForm } from '/src/js/email-service.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initMobileNav();
+      initScrollReveal();
+      initDownloadCTA();
+      initEmailForm('.newsletter-form');
+
+      // Sticky header background
+      const header = document.getElementById('site-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }, { passive: true });
+    });
+  </script>
+</body>
+</html>

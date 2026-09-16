@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works — The Forge System | Forge</title>
+  <meta name="description" content="From who you want to become to the actions you take today. Discover how the Forge system turns ambition into compounding daily execution.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Scroll Reset Before Render -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <script type="module" src="/src/js/scroll-reset.js"></script>
+
+  <link rel="stylesheet" href="/src/css/how-it-works.css">
+</head>
+<body>
+
+  <!-- ==================================================
+       STICKY MINIMAL NAVIGATION
+  ================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+        <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+          <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-wordmark">FORGE</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/features" class="nav-link">Features</a>
+        <a href="/how-it-works" class="nav-link is-active">How It Works</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/download.html" class="btn btn-primary" id="nav-cta" data-download-cta>
+          <span>DOWNLOAD FORGE</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <a href="/features" class="mobile-nav-link">Features</a>
+      <a href="/how-it-works" class="mobile-nav-link is-active">How It Works</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/faq" class="mobile-nav-link">FAQ</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="/download.html" class="btn btn-primary mobile-drawer-cta" style="width: 100%;" data-download-cta>
+        <span>DOWNLOAD FORGE</span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================================================
+         HERO — HOW FORGE WORKS
+    ================================================== -->
+    <section class="hiw-hero">
+      <div class="container">
+        <div class="hiw-hero-wrap reveal">
+          <span class="eyebrow eyebrow-accent">THE FORGE ARCHITECTURE</span>
+          
+          <h1 class="headline-hero">
+            HOW FORGE<br>
+            WORKS.
+          </h1>
+
+          <div class="hiw-hero-lead">
+            <span>From who you want to become</span>
+            to the actions you take today.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         THE SYSTEM — 4 CONNECTED STAGES
+    ================================================== -->
+    <section class="hiw-system-section" id="the-system">
+      <div class="container">
+        
+        <div class="hiw-system-header reveal">
+          <span class="eyebrow">THE SYSTEM</span>
+          <h2 class="hiw-system-title">
+            ONE SEAMLESS CHAIN.
+          </h2>
+          <p class="body-lead" style="margin-top: var(--space-3); color: var(--color-text-secondary);">
+            Every stage builds directly into the next. No guesswork, no scattered notes, no friction.
+          </p>
+        </div>
+
+        <div class="hiw-stages-chain">
+          
+          <!-- Stage 01: GOAL -->
+          <div class="hiw-stage-item reveal">
+            <div class="hiw-stage-num-col">
+              <span class="hiw-stage-num">01</span>
+              <span class="hiw-connector-badge">STAGE 01 ↓</span>
+            </div>
+            
+            <div class="hiw-stage-text-col">
+              <h3 class="hiw-stage-title">GOAL</h3>
+              <p class="hiw-stage-desc">
+                Decide who you want to become and what you want to improve.
+              </p>
+            </div>
+
+            <div class="hiw-stage-ui-col">
+              <div class="hiw-mini-product-card">
+                <div class="hiw-mini-card-head">
+                  <span class="hiw-mini-card-tag">SYSTEM ORIENTATION</span>
+                  <span class="hiw-mini-card-badge">ACTIVE</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Selected Focus</span>
+                  <span class="hiw-mini-row-val">Strength & Posture</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Commitment Horizon</span>
+                  <span class="hiw-mini-row-val">90 Days</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Daily Anchor</span>
+                  <span class="hiw-mini-row-val">4 Core Actions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 02: PLAN -->
+          <div class="hiw-stage-item reveal">
+            <div class="hiw-stage-num-col">
+              <span class="hiw-stage-num">02</span>
+              <span class="hiw-connector-badge">STAGE 02 ↓</span>
+            </div>
+            
+            <div class="hiw-stage-text-col">
+              <h3 class="hiw-stage-title">PLAN</h3>
+              <p class="hiw-stage-desc">
+                Turn that direction into practical daily actions.
+              </p>
+            </div>
+
+            <div class="hiw-stage-ui-col">
+              <div class="hiw-mini-product-card">
+                <div class="hiw-mini-card-head">
+                  <span class="hiw-mini-card-tag">GENERATED BLUEPRINT</span>
+                  <span class="hiw-mini-card-badge">CALCULATED</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Training Split</span>
+                  <span class="hiw-mini-row-val">Upper / Lower (4 Days)</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Overload Target</span>
+                  <span class="hiw-mini-row-val">+2.5 kg Increment</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Daily Fuel</span>
+                  <span class="hiw-mini-row-val">140g Protein • 2.5L Water</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 03: ACTION -->
+          <div class="hiw-stage-item reveal">
+            <div class="hiw-stage-num-col">
+              <span class="hiw-stage-num">03</span>
+              <span class="hiw-connector-badge">STAGE 03 ↓</span>
+            </div>
+            
+            <div class="hiw-stage-text-col">
+              <h3 class="hiw-stage-title">ACTION</h3>
+              <p class="hiw-stage-desc">
+                Know what to focus on today.
+              </p>
+            </div>
+
+            <div class="hiw-stage-ui-col">
+              <div class="hiw-mini-product-card">
+                <div class="hiw-mini-card-head">
+                  <span class="hiw-mini-card-tag">TODAY'S ACTIONS</span>
+                  <span class="hiw-mini-card-badge">IN PROGRESS</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>1. Upper Push Session</span>
+                  <span class="app-badge-done">COMPLETED</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>2. 140g Protein Target</span>
+                  <span class="app-badge-done">112g / 140g</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>3. Posture Reset Drill</span>
+                  <span class="app-badge-done">COMPLETED</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>4. 23:00 Sleep Lock</span>
+                  <span class="hiw-mini-row-val" style="color: var(--color-text-muted);">SCHEDULED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 04: PROGRESS -->
+          <div class="hiw-stage-item reveal">
+            <div class="hiw-stage-num-col">
+              <span class="hiw-stage-num">04</span>
+              <span class="hiw-connector-badge">STAGE 04</span>
+            </div>
+            
+            <div class="hiw-stage-text-col">
+              <h3 class="hiw-stage-title">PROGRESS</h3>
+              <p class="hiw-stage-desc">
+                Track what you've done and see the change build.
+              </p>
+            </div>
+
+            <div class="hiw-stage-ui-col">
+              <div class="hiw-mini-product-card">
+                <div class="hiw-mini-card-head">
+                  <span class="hiw-mini-card-tag">MOMENTUM MATRIX</span>
+                  <span class="hiw-mini-card-badge">COMPOUNDING</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Current Streak</span>
+                  <span class="hiw-mini-row-val">14 Days Unbroken</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>28-Day Adherence</span>
+                  <span class="hiw-mini-row-val">93% Consistency</span>
+                </div>
+                <div class="hiw-mini-row">
+                  <span>Strength Delta</span>
+                  <span class="hiw-mini-row-val">+7.5 kg Compound</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================
+         HOW IT WORKS — REAL DAY
+    ================================================== -->
+    <section class="hiw-ordinary-section" id="real-day">
+      <div class="container">
+        <div class="hiw-ordinary-wrap">
+          
+          <div class="hiw-ordinary-header reveal">
+            <span class="eyebrow eyebrow-accent">ORDINARY DAYS</span>
+            <h2 class="hiw-ordinary-headline">
+              A BETTER YOU<br>
+              IS BUILT IN ORDINARY DAYS.
+            </h2>
+            <p class="body-lead" style="margin-top: var(--space-4); color: var(--color-text-secondary);">
+              Grand intentions mean nothing without daily execution. Here is how a real day unfolds.
+            </p>
+          </div>
+
+          <div class="hiw-day-flow-grid reveal">
+            
+            <!-- MORNING -->
+            <div class="hiw-day-flow-card">
+              <span class="hiw-day-flow-time">07:30 • MORNING</span>
+              <div class="hiw-day-flow-action">
+                <span>MORNING</span>
+                <span class="hiw-day-flow-action-arrow">→</span>
+              </div>
+              <h3 class="hiw-day-flow-title">Check your plan</h3>
+              <p class="hiw-day-flow-desc">
+                Open Forge for 30 seconds. Review today's workout, target numbers, and the single non-negotiable action that matters most today.
+              </p>
+            </div>
+
+            <!-- DAY -->
+            <div class="hiw-day-flow-card">
+              <span class="hiw-day-flow-time">14:00 • DAY</span>
+              <div class="hiw-day-flow-action">
+                <span>DAY</span>
+                <span class="hiw-day-flow-action-arrow">→</span>
+              </div>
+              <h3 class="hiw-day-flow-title">Complete your actions</h3>
+              <p class="hiw-day-flow-desc">
+                Train with auto-progressed weights (+2.5 kg). Log meals with one tap. Check off daily posture and hydration without overcomplicating life.
+              </p>
+            </div>
+
+            <!-- EVENING -->
+            <div class="hiw-day-flow-card">
+              <span class="hiw-day-flow-time">21:30 • EVENING</span>
+              <div class="hiw-day-flow-action">
+                <span>EVENING</span>
+                <span class="hiw-day-flow-action-arrow">→</span>
+              </div>
+              <h3 class="hiw-day-flow-title">Review your progress</h3>
+              <p class="hiw-day-flow-desc">
+                Log recovery baseline and lock in screen shutdown. See your streak advance. Sleep knowing tomorrow is already organized.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- The Realist Philosophy -->
+          <div class="hiw-reality-statement reveal">
+            <p class="hiw-reality-text">
+              Forge isn't asking you to change your entire life overnight.
+            </p>
+            <p class="hiw-reality-sub">
+              It helps you keep moving.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         HOW IT WORKS — VISUAL EXAMPLE
+    ================================================== -->
+    <section class="hiw-example-section" id="example">
+      <div class="container">
+        <div class="hiw-example-wrap">
+          
+          <div class="hiw-example-header reveal">
+            <span class="eyebrow">THE PIPELINE IN PRACTICE</span>
+            <h2 class="hiw-example-headline">
+              FROM AMBITION TO MOMENTUM.
+            </h2>
+            <p class="body-lead" style="margin-top: var(--space-2); color: var(--color-text-secondary);">
+              See how Forge takes a broad personal ambition and translates it into measurable daily reality.
+            </p>
+          </div>
+
+          <div class="hiw-example-pipeline reveal">
+            
+            <!-- Step 1: GOAL -->
+            <div class="hiw-pipeline-node">
+              <div class="hiw-pipeline-node-head">
+                <span class="hiw-pipeline-label">GOAL</span>
+                <span class="app-badge-done">INTENTION</span>
+              </div>
+              <div class="hiw-pipeline-content-title" style="font-style: italic; font-size: 1.35rem; color: #FFFFFF;">
+                "I want to become stronger, healthier and more disciplined."
+              </div>
+            </div>
+
+            <div class="hiw-pipeline-arrow" aria-hidden="true">↓</div>
+
+            <!-- Step 2: FORGE -->
+            <div class="hiw-pipeline-node" style="border-color: rgba(255, 255, 255, 0.2); background-color: #161616;">
+              <div class="hiw-pipeline-node-head">
+                <span class="hiw-pipeline-label">FORGE</span>
+                <span class="app-badge-done">SYSTEM ENGINE</span>
+              </div>
+              <div class="hiw-pipeline-content-title" style="font-size: 1.15rem; color: #FFFFFF;">
+                Turns that ambition into clear, manageable daily actions.
+              </div>
+            </div>
+
+            <div class="hiw-pipeline-arrow" aria-hidden="true">↓</div>
+
+            <!-- Step 3: TODAY -->
+            <div class="hiw-pipeline-node">
+              <div class="hiw-pipeline-node-head">
+                <span class="hiw-pipeline-label">TODAY</span>
+                <span class="app-badge-done">DAILY EXECUTION</span>
+              </div>
+
+              <div class="hiw-today-action-grid">
+                <div class="hiw-today-action-card">
+                  <span class="hiw-today-action-type">WORKOUT</span>
+                  <div class="hiw-today-action-val">Upper Push • 38 min</div>
+                </div>
+
+                <div class="hiw-today-action-card">
+                  <span class="hiw-today-action-type">NUTRITION</span>
+                  <div class="hiw-today-action-val">140g Protein • 2.5L</div>
+                </div>
+
+                <div class="hiw-today-action-card">
+                  <span class="hiw-today-action-type">HABIT</span>
+                  <div class="hiw-today-action-val">Posture Reset • Cold</div>
+                </div>
+
+                <div class="hiw-today-action-card">
+                  <span class="hiw-today-action-type">RECOVERY</span>
+                  <div class="hiw-today-action-val">8h Sleep • 84 Readiness</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hiw-pipeline-arrow" aria-hidden="true">↓</div>
+
+            <!-- Step 4: PROGRESS -->
+            <div class="hiw-pipeline-node">
+              <div class="hiw-pipeline-node-head">
+                <span class="hiw-pipeline-label">PROGRESS</span>
+                <span class="app-badge-done">COMPOUNDING RESULTS</span>
+              </div>
+
+              <div class="hiw-progress-stat-row">
+                <div class="hiw-progress-stat-box">
+                  <div class="hiw-progress-stat-val">4 / 4</div>
+                  <div class="hiw-progress-stat-sub">Completed Actions Today</div>
+                </div>
+
+                <div class="hiw-progress-stat-box">
+                  <div class="hiw-progress-stat-val">14 DAYS</div>
+                  <div class="hiw-progress-stat-sub">Unbroken Consistency</div>
+                </div>
+
+                <div class="hiw-progress-stat-box">
+                  <div class="hiw-progress-stat-val">+2.5 KG</div>
+                  <div class="hiw-progress-stat-sub">Progress Over Time</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         FINAL CTA POSTER
+    ================================================== -->
+    <section class="hiw-poster-section" id="how-cta">
+      <div class="container">
+        <div class="hiw-poster-wrap reveal">
+          <span class="eyebrow eyebrow-accent">THE NEXT STEP</span>
+          
+          <h2 class="hiw-poster-title">
+            BUILDING YOURSELF<br>
+            ISN'T ONE BIG DECISION.
+          </h2>
+
+          <p class="hiw-poster-subtitle">
+            IT'S WHAT YOU DO NEXT.
+          </p>
+
+          <div class="hiw-poster-cta-group">
+            <a href="/download.html" class="btn btn-primary" style="padding: 1.15rem 2.6rem; font-size: 1.05rem;" data-download-cta>
+              <span>DOWNLOAD FORGE</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <p class="hiw-poster-brand">
+            FORGE · BUILD YOURSELF.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================
+       FOOTER
+  ================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Statement -->
+        <div class="footer-brand-col">
+          <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+            <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+              <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+              <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+            </svg>
+            <span class="brand-wordmark">FORGE</span>
+          </a>
+          <p class="footer-tagline">
+            BUILD YOURSELF.
+          </p>
+        </div>
+
+        <!-- Col 2: Explore -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">EXPLORE</h4>
+          <ul class="footer-links-list">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/features" class="footer-link">Features</a></li>
+            <li><a href="/how-it-works" class="footer-link is-active">How It Works</a></li>
+            <li><a href="/about" class="footer-link">About</a></li>
+            <li><a href="/faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Build -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">BUILD</h4>
+          <ul class="footer-links-list">
+            <li><a href="/download.html" class="footer-link" data-download-cta>Download Forge</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Stay Updated -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">STAY UPDATED</h4>
+          <form class="newsletter-form footer-newsletter-form" id="footer-newsletter-form" novalidate>
+            <div class="footer-input-group">
+              <input
+                type="email"
+                class="newsletter-input footer-newsletter-input"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+                aria-label="Your email address"
+              >
+              <button type="submit" class="btn btn-secondary footer-newsletter-btn">
+                <span>GET UPDATES</span>
+              </button>
+            </div>
+            <div class="newsletter-feedback footer-newsletter-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <span class="footer-bottom-brand">FORGE · BUILD YOURSELF.</span>
+        <span class="footer-bottom-copy">&copy; 2026 FORGE. ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initMobileNav } from '/src/js/mobile-nav.js';
+    import { initScrollReveal } from '/src/js/scroll-reveal.js';
+    import { initDownloadCTA } from '/src/js/download-cta.js';
+    import { initEmailForm } from '/src/js/email-service.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initMobileNav();
+      initScrollReveal();
+      initDownloadCTA();
+      initEmailForm('.newsletter-form');
+
+      // Sticky header background
+      const header = document.getElementById('site-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }, { passive: true });
+    });
+  </script>
+</body>
+</html>

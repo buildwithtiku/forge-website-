@@ -1,0 +1,459 @@
+/**
+ * Forge Website — Features Page Stylesheet
+ * Premium, editorial showcase with varied rhythms and authentic Forge UI.
+ */
+
+@import './tokens.css';
+@import './reset.css';
+@import './typography.css';
+@import './components.css';
+
+/* ==================================================
+   FEATURES HERO
+================================================== */
+.features-hero {
+  padding-top: calc(var(--navbar-height, 92px) + var(--navbar-safe-gap, 80px));
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--color-border);
+  background: radial-gradient(circle at 50% 0%, #151515 0%, var(--color-bg) 75%);
+  text-align: center;
+}
+
+.features-hero-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.features-hero .headline-hero {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.features-hero .body-lead {
+  max-width: 620px;
+  margin: 0 auto var(--space-8);
+  color: var(--color-text-secondary);
+}
+
+/* Subtle Hero Forge Product UI Teaser */
+.features-hero-chassis-teaser {
+  max-width: 580px;
+  margin: var(--space-6) auto 0;
+  background: #111111;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  text-align: left;
+}
+
+.teaser-system-status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.teaser-indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.teaser-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.teaser-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ==================================================
+   TRANSITION: ONE GOAL. FOUR DIRECTIONS.
+================================================== */
+.pillars-intro-section {
+  padding: var(--space-16) 0;
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.pillars-intro-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto var(--space-12);
+}
+
+.pillars-intro-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-top: var(--space-2);
+}
+
+.pillars-editorial-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.pillar-editorial-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--duration-fast) ease;
+}
+
+.pillar-editorial-item:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.pillar-editorial-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.pillar-editorial-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.pillar-editorial-desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+/* ==================================================
+   VARIED FEATURE SECTIONS
+================================================== */
+.feature-section {
+  padding: 120px 0;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+/* SECTION A: PHYSIQUE (UI Left, Text Right) */
+.feature-grid-a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(64px, 5.5vw, 96px);
+  align-items: center;
+}
+
+/* SECTION B: NUTRITION (Text Left, UI Right) */
+.feature-grid-b {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(64px, 5.5vw, 96px);
+  align-items: center;
+}
+
+/* SECTION C: RECOVERY (Full-Width Layered Showcase) */
+.feature-section-fullwidth {
+  padding: 120px 0;
+  border-bottom: 1px solid var(--color-border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015) 0%, transparent 100%);
+}
+
+.feature-fullwidth-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto var(--space-10);
+}
+
+.feature-fullwidth-dashboard {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-6);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* SECTION D: CONFIDENCE (Editorial Typography + Compact Drill UI) */
+.feature-grid-d {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(64px, 5.5vw, 96px);
+  align-items: center;
+}
+
+.editorial-pullquote {
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  padding-left: var(--space-5);
+  margin: var(--space-4) 0;
+}
+
+/* SECTION E: DISCIPLINE & HABITS (Split Workflow) */
+.feature-grid-e {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(64px, 5.5vw, 96px);
+  align-items: center;
+}
+
+/* SECTION F: GROWTH (Compounding Matrix Showcase) */
+.feature-grid-f {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(64px, 5.5vw, 96px);
+  align-items: center;
+}
+
+/* Common Feature Typography */
+.feature-copy-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 620px;
+  width: 100%;
+}
+
+.feature-eyebrow-tag {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-eyebrow-tag::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.feature-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: #FFFFFF;
+}
+
+.feature-subhead {
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.feature-body-text {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+}
+
+/* Outcome Tag Box */
+.outcome-callout {
+  margin-top: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border);
+  border-left: 2px solid #FFFFFF;
+  border-radius: var(--radius-sm);
+}
+
+.outcome-callout-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+.outcome-callout-text {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+/* Feature UI Chassis Containers */
+.feature-chassis {
+  background: #111111;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.65);
+  width: 100%;
+}
+
+.feature-chassis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.feature-chassis-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* 28-day matrix component */
+.growth-matrix-visual {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-top: var(--space-4);
+}
+
+.matrix-dot {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.matrix-dot.active {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.matrix-dot.mid {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ==================================================
+   EDITORIAL TRANSITION SECTION
+================================================== */
+.feature-transition-section {
+  padding: var(--space-20) 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  background: radial-gradient(circle at 50% 50%, #151515 0%, var(--color-bg) 80%);
+}
+
+.feature-transition-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.feature-transition-headline {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  margin-bottom: var(--space-4);
+}
+
+.feature-transition-sub {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* ==================================================
+   FEATURES FINAL CTA
+================================================== */
+.features-cta-section {
+  padding: var(--space-24) 0;
+  text-align: center;
+  background: var(--bg-primary);
+}
+
+.features-cta-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.features-cta-wrap .cta-headline {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  margin: var(--space-4) 0 var(--space-4);
+}
+
+.features-cta-wrap .cta-copy {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .feature-section,
+  .feature-section-fullwidth {
+    padding: 80px 0;
+  }
+
+  .pillars-editorial-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-grid-a,
+  .feature-grid-b,
+  .feature-grid-d,
+  .feature-grid-e,
+  .feature-grid-f {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .feature-fullwidth-dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-chassis {
+    padding: 22px;
+  }
+
+  .feature-chassis-header {
+    margin-bottom: 20px;
+  }
+
+  .pillars-editorial-row {
+    grid-template-columns: 1fr;
+  }
+
+  .features-hero-chassis-teaser {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

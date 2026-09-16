@@ -1,0 +1,483 @@
+/**
+ * Forge Website — Download / Coming Soon Stylesheet
+ * 
+ * Cinematic editorial presentation for the Forge early access waitlist.
+ * Strict black/white palette, precise typography, subtle status treatments.
+ */
+
+@import './tokens.css';
+@import './reset.css';
+@import './typography.css';
+@import './components.css';
+
+/* ==================================================
+   DOWNLOAD COMING SOON LAYOUT
+================================================== */
+.download-page-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--color-text-primary);
+}
+
+.download-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(var(--navbar-height, 92px) + clamp(24px, 5vh, 48px));
+  padding-bottom: clamp(32px, 6vh, 64px);
+  padding-inline: var(--forge-page-padding, 96px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background radial glow centered behind headline */
+.download-main::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(800px, 90vw);
+  height: min(600px, 80vh);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.035) 0%, rgba(10, 10, 10, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.download-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------------------------------------------
+   1. FORGE LOGO
+-------------------------------------------------- */
+.download-brand-hero {
+  margin-bottom: clamp(20px, 3.5vh, 32px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-logo-svg {
+  width: 64px;
+  height: 56px;
+  color: #FFFFFF;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.15));
+  transition: transform var(--duration-fast) ease;
+}
+
+.download-brand-hero:hover .download-logo-svg {
+  transform: scale(1.04);
+}
+
+/* --------------------------------------------------
+   2. MAIN HEADLINE
+-------------------------------------------------- */
+.download-headline {
+  font-family: var(--font-sans);
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  margin: 0 0 clamp(16px, 2.5vh, 24px);
+  text-transform: none;
+}
+
+.download-headline .brand-word {
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+/* --------------------------------------------------
+   3. SUPPORTING COPY
+-------------------------------------------------- */
+.download-copy {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  margin: 0 auto clamp(24px, 4vh, 36px);
+}
+
+/* --------------------------------------------------
+   4. PLATFORM STATUS ("Android first.")
+-------------------------------------------------- */
+.download-platform-box {
+  width: 100%;
+  max-width: 480px;
+  padding: clamp(20px, 2.8vh, 26px) clamp(18px, 3vw, 28px);
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(180deg, rgba(22, 22, 26, 0.72) 0%, rgba(12, 12, 14, 0.82) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  margin-bottom: clamp(24px, 4vh, 36px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 16px 36px -12px rgba(0, 0, 0, 0.7);
+  transition: border-color 350ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 350ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+/* Very soft blue/indigo ambient glow behind the card */
+.download-platform-box::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: radial-gradient(circle at 50% -20%, rgba(37, 99, 235, 0.16) 0%, rgba(30, 58, 138, 0.06) 50%, transparent 75%);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.75;
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.download-platform-box:hover {
+  border-color: rgba(59, 130, 246, 0.32);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12),
+              0 0 32px -4px rgba(37, 99, 235, 0.18),
+              0 20px 44px -10px rgba(0, 0, 0, 0.85);
+}
+
+.download-platform-box:hover::before {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+/* Header lockup: dot + text */
+.platform-badge-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background: rgba(37, 99, 235, 0.06);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  border-radius: 9999px;
+  box-shadow: 0 0 12px -2px rgba(37, 99, 235, 0.15);
+}
+
+.platform-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3B82F6;
+  box-shadow: 0 0 8px #3B82F6, 0 0 2px #60A5FA;
+  flex-shrink: 0;
+  animation: pulse-indigo 3s ease-in-out infinite;
+}
+
+@keyframes pulse-indigo {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #3B82F6, 0 0 4px #93C5FD;
+  }
+}
+
+.platform-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.platform-note {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+/* Google Play Button: Elevated, Intentional, Disabled */
+.store-badge-disabled {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.5);
+  cursor: not-allowed;
+  user-select: none;
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1),
+              background 300ms ease;
+}
+
+.store-badge-disabled:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59, 130, 246, 0.38);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.6),
+              0 0 16px -2px rgba(37, 99, 235, 0.22);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.03) 100%);
+}
+
+.store-badge-disabled .play-icon {
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+  transition: transform 300ms ease;
+}
+
+.store-badge-disabled:hover .play-icon {
+  transform: scale(1.05);
+}
+
+.store-badge-disabled .badge-text-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.15;
+}
+
+.store-badge-disabled .badge-sub {
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.store-badge-disabled .badge-title {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.store-badge-disabled .badge-status-pill {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 9999px;
+  color: #93C5FD;
+  margin-left: 4px;
+  white-space: nowrap;
+  box-shadow: 0 0 10px -2px rgba(37, 99, 235, 0.2);
+}
+
+@media (max-width: 480px) {
+  .store-badge-disabled {
+    padding: 7px 12px;
+    gap: 9px;
+  }
+  .store-badge-disabled .badge-status-pill {
+    padding: 2px 7px;
+    font-size: 0.5625rem;
+  }
+}
+
+/* --------------------------------------------------
+   5. EMAIL REGISTRATION FORM
+-------------------------------------------------- */
+.download-form-wrap {
+  width: 100%;
+  max-width: 480px;
+  transition: opacity var(--duration-normal) ease, transform var(--duration-normal) ease;
+}
+
+.download-lead-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: var(--space-2, 8px);
+  width: 100%;
+}
+
+.download-input {
+  flex: 1;
+  padding: 0.85rem 1.15rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--duration-fast) ease, background-color var(--duration-fast) ease;
+}
+
+.download-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.download-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: #FFFFFF;
+  box-shadow: 0 0 0 1px #FFFFFF;
+}
+
+.download-submit-btn {
+  padding: 0.85rem 1.65rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.form-feedback {
+  min-height: 24px;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.78125rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.form-feedback.is-error {
+  color: #FF5A5A;
+}
+
+.form-feedback.is-submitting {
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------
+   6. SUCCESS STATE
+-------------------------------------------------- */
+.download-success-state {
+  width: 100%;
+  max-width: 480px;
+  padding: clamp(28px, 4vh, 40px) clamp(20px, 3vh, 32px);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.success-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  color: #FFFFFF;
+}
+
+.success-check-svg {
+  width: 22px;
+  height: 22px;
+}
+
+.success-headline {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.success-sub {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------
+   7. FOOTER
+-------------------------------------------------- */
+.download-footer {
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--bg-primary);
+}
+
+.download-footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.download-footer-copy a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-left: 6px;
+}
+
+.download-footer-copy a:hover {
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------
+   8. RESPONSIVE QUERIES
+-------------------------------------------------- */
+@media (max-width: 600px) {
+  .download-main {
+    padding-inline: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .download-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .store-badge-disabled {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

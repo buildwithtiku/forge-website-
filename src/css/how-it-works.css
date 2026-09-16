@@ -1,0 +1,563 @@
+/**
+ * Forge Website — How It Works Page Stylesheet
+ * Dark, minimal, editorial aesthetics with connected visual stages.
+ */
+
+@import './reset.css';
+@import './tokens.css';
+@import './typography.css';
+@import './components.css';
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+/* ==================================================
+   HERO
+================================================== */
+.hiw-hero {
+  padding-top: calc(var(--navbar-height, 92px) + var(--navbar-safe-gap, 80px));
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--color-border);
+  background: radial-gradient(circle at 50% 0%, #151515 0%, var(--bg-primary) 75%);
+}
+
+.hiw-hero-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 960px;
+}
+
+.hiw-hero .headline-hero {
+  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hiw-hero-lead {
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--color-text-secondary);
+  border-left: 2px solid #FFFFFF;
+  padding-left: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.hiw-hero-lead span {
+  display: block;
+  color: #FFFFFF;
+}
+
+/* ==================================================
+   THE SYSTEM — 4 CONNECTED STAGES
+================================================== */
+.hiw-system-section {
+  padding: 120px 0;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hiw-system-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 64px;
+}
+
+.hiw-system-title {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: var(--space-3);
+}
+
+/* Connected Stage Chain */
+.hiw-stages-chain {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  position: relative;
+}
+
+.hiw-stage-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: clamp(180px, 14vw, 220px) 1fr minmax(420px, 500px);
+  gap: 64px;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.hiw-stage-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.hiw-stage-num-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.hiw-stage-num {
+  font-family: var(--font-mono);
+  font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+  font-weight: 800;
+  color: var(--color-text-muted);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.hiw-connector-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-top: var(--space-2);
+}
+
+.hiw-stage-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hiw-stage-title {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.hiw-stage-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.hiw-stage-ui-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Micro Product Card */
+.hiw-mini-product-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.hiw-mini-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hiw-mini-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.hiw-mini-card-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xs);
+  color: #FFFFFF;
+}
+
+.hiw-mini-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  padding: 6px 0;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.hiw-mini-row:last-child {
+  border-bottom: none;
+}
+
+.hiw-mini-row-val {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* ==================================================
+   ORDINARY DAYS SECTION
+================================================== */
+.hiw-ordinary-section {
+  padding: var(--space-20) 0;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hiw-ordinary-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hiw-ordinary-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto var(--space-16);
+}
+
+.hiw-ordinary-headline {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: var(--space-3);
+}
+
+/* 3-Part Flow Cards */
+.hiw-day-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  position: relative;
+}
+
+.hiw-day-flow-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-8) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  transition: transform var(--duration-normal) ease, border-color var(--duration-normal) ease;
+}
+
+.hiw-day-flow-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-border-light);
+}
+
+.hiw-day-flow-time {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.hiw-day-flow-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.hiw-day-flow-action {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.hiw-day-flow-action-arrow {
+  color: var(--color-text-muted);
+}
+
+.hiw-day-flow-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.hiw-reality-statement {
+  margin-top: var(--space-12);
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03), transparent 70%);
+  text-align: center;
+}
+
+.hiw-reality-text {
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  color: #FFFFFF;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hiw-reality-sub {
+  margin-top: var(--space-3);
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+/* ==================================================
+   CONCRETE EXAMPLE SECTION (THE SYSTEM IN ACTION)
+================================================== */
+.hiw-example-section {
+  padding: var(--space-20) 0;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hiw-example-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hiw-example-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto var(--space-12);
+}
+
+.hiw-example-headline {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: var(--space-3);
+}
+
+.hiw-example-pipeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.hiw-pipeline-node {
+  width: 100%;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6) var(--space-8);
+}
+
+.hiw-pipeline-node-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-3);
+}
+
+.hiw-pipeline-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.hiw-pipeline-content-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.hiw-pipeline-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  line-height: 1;
+}
+
+/* Today Grid inside Example */
+.hiw-today-action-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.hiw-today-action-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+}
+
+.hiw-today-action-type {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.hiw-today-action-val {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-top: 3px;
+}
+
+/* Progress Row inside Example */
+.hiw-progress-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.hiw-progress-stat-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.hiw-progress-stat-val {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+}
+
+.hiw-progress-stat-sub {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+/* ==================================================
+   FINAL CTA POSTER
+================================================== */
+.hiw-poster-section {
+  padding: clamp(140px, 12vw, 180px) 0;
+  background: radial-gradient(circle at 50% 50%, #161616 0%, var(--bg-primary) 85%);
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+}
+
+.hiw-poster-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.hiw-poster-title {
+  font-size: clamp(2.6rem, 6.8vw, 5.25rem);
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hiw-poster-subtitle {
+  font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.hiw-poster-cta-group {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.hiw-poster-brand {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  margin-top: var(--space-4);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hiw-stage-item {
+    grid-template-columns: 120px 1fr;
+    gap: var(--space-6);
+  }
+  .hiw-stage-ui-col {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+  .hiw-mini-product-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hiw-system-section {
+    padding: 80px 0;
+  }
+  .hiw-stage-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    padding: 40px 0;
+  }
+  .hiw-day-flow-grid {
+    grid-template-columns: 1fr;
+  }
+  .hiw-today-action-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hiw-today-action-grid {
+    grid-template-columns: 1fr;
+  }
+  .hiw-progress-stat-row {
+    grid-template-columns: 1fr;
+  }
+}

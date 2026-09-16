@@ -1,0 +1,805 @@
+/* ==================================================
+   FORGE CINEMATIC SCROLL EXPERIENCE
+   Storytelling Tracks • Progressive Reveals • Deep Charcoal
+================================================== */
+
+@import "./reset.css";
+@import "./tokens.css";
+@import "./typography.css";
+@import "./components.css";
+@import "./faq.css";
+
+/* Base Body Style */
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+/* Section Containers */
+.section {
+  position: relative;
+  width: 100%;
+  padding: var(--section-gap-major, 120px) 0;
+  scroll-margin-top: calc(var(--navbar-height, 92px) + 16px);
+}
+
+.section-hero {
+  min-height: calc(100vh - var(--navbar-height, 92px));
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--navbar-height, 92px) + clamp(20px, 3.5vh, 44px));
+  padding-bottom: clamp(32px, 5vh, 64px);
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: var(--max-width, 1540px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--forge-page-padding, 96px);
+  padding-right: var(--forge-page-padding, 96px);
+  width: 100%;
+}
+
+.container-editorial {
+  max-width: var(--max-width-editorial, 1100px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--forge-page-padding, 96px);
+  padding-right: var(--forge-page-padding, 96px);
+  width: 100%;
+}
+
+.container-narrow {
+  max-width: var(--max-width-narrow, 760px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--forge-page-padding, 96px);
+  padding-right: var(--forge-page-padding, 96px);
+  width: 100%;
+}
+
+/* --------------------------------------------------
+   SCENE 01 — CINEMATIC HERO
+-------------------------------------------------- */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.hero-copy-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-6);
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-top: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hero-device-col {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* --------------------------------------------------
+   SCENE 02 — SCROLL INTRO: "YOU WANT TO CHANGE"
+-------------------------------------------------- */
+.change-track {
+  height: var(--track-change-height);
+  position: relative;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--color-border);
+  z-index: 2;
+}
+
+.change-stage {
+  position: sticky;
+  top: var(--navbar-height, 92px);
+  min-height: calc(100vh - var(--navbar-height, 92px));
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(24px, 4vh, 48px) var(--forge-page-padding, 96px);
+  box-sizing: border-box;
+}
+
+.change-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.change-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding-left: var(--space-6);
+  border-left: 2px solid var(--color-border);
+}
+
+.change-closing-question {
+  margin-top: var(--space-8);
+  opacity: 0.2;
+  transform: translateY(12px);
+  transition: opacity var(--duration-normal) ease, transform var(--duration-normal) ease;
+}
+
+.change-closing-question.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------
+   SCENE 03 — THE PROBLEM: "STARTING OVER"
+-------------------------------------------------- */
+.problem-track {
+  height: var(--track-problem-height);
+  position: relative;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--color-border);
+  z-index: 3;
+}
+
+.problem-stage {
+  position: sticky;
+  top: var(--navbar-height, 92px);
+  min-height: calc(100vh - var(--navbar-height, 92px));
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(20px, 3vh, 40px) var(--forge-page-padding, 96px);
+  box-sizing: border-box;
+}
+
+.problem-sequence-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 2vh, 24px);
+  max-width: 1100px;
+}
+
+.problem-narrative-block {
+  margin-top: clamp(14px, 2.5vh, 24px);
+  padding-top: clamp(14px, 2.5vh, 24px);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 1.5vh, 16px);
+  opacity: 0.2;
+  transform: translateY(12px);
+  transition: opacity var(--duration-normal) ease, transform var(--duration-normal) ease;
+}
+
+.problem-narrative-block.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------
+   SCENE 04 — MEET FORGE
+-------------------------------------------------- */
+.meet-section {
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-32) 0;
+  position: relative;
+  z-index: 4;
+}
+
+.meet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+/* --------------------------------------------------
+   SCENE 05 — THE FOUR PILLARS (STICKY INTERACTIVE)
+-------------------------------------------------- */
+.pillars-track {
+  height: var(--track-pillars-height);
+  position: relative;
+  background-color: var(--bg-secondary);
+  z-index: 5;
+}
+
+.pillars-stage {
+  position: sticky;
+  top: var(--navbar-height, 92px);
+  min-height: calc(100vh - var(--navbar-height, 92px));
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(16px, 2.5vh, 32px) var(--forge-page-padding, 96px);
+  box-sizing: border-box;
+}
+
+.pillars-header {
+  margin-bottom: clamp(16px, 2.5vh, 28px);
+}
+
+/* --------------------------------------------------
+   SCENE 06 — YOUR DAY (TIMELINE)
+-------------------------------------------------- */
+.day-section {
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.day-header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.day-closing {
+  text-align: center;
+  margin-top: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* --------------------------------------------------
+   SCENE 07 — PRODUCT SHOWCASE
+-------------------------------------------------- */
+.showcase-section {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.showcase-header {
+  margin-bottom: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* --------------------------------------------------
+   SCENE 08 — PROGRESS STORY
+-------------------------------------------------- */
+.progress-section {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.progress-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* --------------------------------------------------
+   SCENE 09 — PHILOSOPHY POSTER
+-------------------------------------------------- */
+.philosophy-section {
+  background-color: var(--bg-secondary);
+  text-align: center;
+  padding: var(--space-40) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.philosophy-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+/* --------------------------------------------------
+   SCENE 10 — FINAL CTA
+-------------------------------------------------- */
+.cta-section {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: var(--space-40) 0;
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-8);
+}
+
+.cta-headline {
+  font-size: clamp(3rem, 7.5vw, 6.5rem);
+  font-weight: 800;
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.cta-copy {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  max-width: 580px;
+}
+
+/* --------------------------------------------------
+   FOOTER (Delegated to shared components.css)
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+   HOMEPAGE SCENE 06 — FEATURES PREVIEW
+-------------------------------------------------- */
+.features-preview-section {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: radial-gradient(circle at 50% 0%, #141414 0%, var(--bg-primary) 70%);
+}
+
+.features-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-12);
+}
+
+.feature-preview-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color var(--duration-fast) ease, transform var(--duration-fast) ease;
+}
+
+.feature-preview-card:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.feature-preview-top {
+  margin-bottom: var(--space-6);
+}
+
+.feature-preview-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+  display: block;
+}
+
+.feature-preview-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: var(--space-2);
+  line-height: 1.25;
+}
+
+.feature-preview-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+.feature-preview-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: var(--space-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-preview-pill {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------
+   HOMEPAGE SCENE 07 — HOW IT WORKS FLOW
+-------------------------------------------------- */
+.how-it-works-section {
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--bg-primary);
+}
+
+.how-it-works-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-12);
+  position: relative;
+}
+
+.flow-step-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  position: relative;
+  transition: border-color var(--duration-fast) ease;
+}
+
+.flow-step-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.flow-step-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-2);
+}
+
+.flow-step-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: var(--space-2);
+}
+
+.flow-step-desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.flow-step-arrow {
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  font-size: 1.25rem;
+  z-index: 2;
+}
+
+.how-it-works-timeline-block {
+  margin-top: var(--space-20);
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+  scroll-margin-top: calc(var(--navbar-height, 92px) + 32px);
+}
+
+/* --------------------------------------------------
+   HOMEPAGE SCENE 09 — ABOUT MANIFESTO PREVIEW
+-------------------------------------------------- */
+.about-preview-section {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: radial-gradient(circle at 50% 50%, #151515 0%, var(--bg-primary) 70%);
+}
+
+.about-preview-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-16) var(--space-8);
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.about-preview-card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: #FFFFFF;
+  margin: var(--space-4) 0;
+}
+
+/* --------------------------------------------------
+   HOMEPAGE SCENE 10 — FAQ PREVIEW
+-------------------------------------------------- */
+.home-faq-section {
+  padding: var(--space-24) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.home-faq-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-12);
+}
+
+.home-faq-footer {
+  text-align: center;
+  margin-top: var(--space-10);
+}
+
+/* --------------------------------------------------
+   HOMEPAGE SCENE — STAY IN THE LOOP (EMAIL CAPTURE)
+-------------------------------------------------- */
+.stay-in-loop-section {
+  padding: var(--space-28) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: radial-gradient(circle at 50% 50%, #161616 0%, var(--bg-primary) 75%);
+}
+
+.loop-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loop-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin: var(--space-3) 0 var(--space-4);
+  line-height: 1.1;
+}
+
+.loop-bullets {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.loop-bullet-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.loop-bullet-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--color-text-muted);
+  border-radius: 50%;
+}
+
+.newsletter-form-wrap {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--space-2);
+  background: #111111;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  transition: border-color var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
+}
+
+.newsletter-form:focus-within {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+.newsletter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0.85rem 1rem;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  min-width: 0;
+}
+
+.newsletter-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.newsletter-btn {
+  white-space: nowrap;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
+}
+
+/* Feedback message container */
+.newsletter-feedback {
+  min-height: 24px;
+  margin-top: var(--space-4);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  transition: all var(--duration-fast) ease;
+}
+
+.newsletter-feedback.is-success .feedback-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.newsletter-feedback.is-success .feedback-sub {
+  color: var(--color-text-secondary);
+  font-size: 0.825rem;
+  margin-top: 2px;
+}
+
+.newsletter-feedback.is-warning .feedback-title {
+  color: #E5E5E5;
+  font-weight: 600;
+}
+
+.newsletter-feedback.is-warning .feedback-sub {
+  color: var(--color-text-muted);
+  font-size: 0.825rem;
+}
+
+.newsletter-feedback.is-error .feedback-title {
+  color: #FF5555;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+    padding: 6px;
+    background: transparent;
+    border: none;
+    gap: var(--space-3);
+  }
+
+  .newsletter-input {
+    background: #111111;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    width: 100%;
+  }
+
+  .newsletter-btn {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------
+   RESPONSIVE LAYOUTS
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+  .features-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-it-works-flow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .flow-step-arrow {
+    display: none;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .meet-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .hero-device-col {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-it-works-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: var(--space-20) 0;
+  }
+
+  .section-hero {
+    padding-top: calc(var(--space-16) + 72px);
+    padding-bottom: var(--space-16);
+  }
+
+  .change-stage,
+  .problem-stage,
+  .pillars-stage {
+    position: relative;
+    top: 0;
+    height: auto;
+    min-height: auto;
+    padding: var(--space-16) 0;
+  }
+
+  .change-track,
+  .problem-track,
+  .pillars-track {
+    height: auto;
+  }
+
+  .pillars-text-col {
+    position: static;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .pillar-story-item {
+    position: static;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto;
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .pillar-screen-view {
+    display: flex !important;
+    animation: none;
+  }
+
+  .change-closing-question,
+  .problem-narrative-block {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .story-step {
+    opacity: 1 !important;
+    color: var(--color-text-secondary) !important;
+  }
+
+  .pause-statement {
+    color: #FFFFFF !important;
+  }
+
+  .timeline-step {
+    opacity: 1 !important;
+  }
+
+  .philosophy-section,
+  .cta-section {
+    padding: var(--space-24) 0;
+  }
+}

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Questions & Answers | Forge</title>
+  <meta name="description" content="Everything you need to know about Forge — what the system does, who it's for, and how it helps you build yourself.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Scroll Reset Before Render -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  </script>
+  <script type="module" src="/src/js/scroll-reset.js"></script>
+
+  <link rel="stylesheet" href="/src/css/faq.css">
+</head>
+<body>
+
+  <!-- ==================================================
+       STICKY MINIMAL NAVIGATION
+  ================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+        <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+          <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-wordmark">FORGE</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/features" class="nav-link">Features</a>
+        <a href="/how-it-works" class="nav-link">How It Works</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/faq" class="nav-link is-active">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/download.html" class="btn btn-primary" id="nav-cta" data-download-cta>
+          <span>DOWNLOAD FORGE</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <a href="/features" class="mobile-nav-link">Features</a>
+      <a href="/how-it-works" class="mobile-nav-link">How It Works</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/faq" class="mobile-nav-link is-active">FAQ</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="/download.html" class="btn btn-primary mobile-drawer-cta" style="width: 100%;" data-download-cta>
+        <span>DOWNLOAD FORGE</span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================================================
+         FAQ HERO
+    ================================================== -->
+    <section class="faq-hero">
+      <div class="container">
+        <div class="faq-hero-wrap reveal">
+          <span class="eyebrow eyebrow-accent">FREQUENTLY ASKED QUESTIONS</span>
+          <h1 class="headline-hero">
+            QUESTIONS.<br>ANSWERS.
+          </h1>
+          <p class="body-lead">
+            Everything you need to know about Forge — what the system does, who it's for, and how it helps you build yourself.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         FAQ ACCORDIONS BY CATEGORY
+    ================================================== -->
+    <section class="faq-content-section">
+      <div class="faq-container">
+
+        <!-- CATEGORY 1: ABOUT FORGE -->
+        <div class="faq-category-group reveal">
+          <div class="faq-category-header">
+            <h2 class="faq-category-title">About Forge</h2>
+            <span class="faq-category-tag">OVERVIEW</span>
+          </div>
+
+          <!-- Q1: What is Forge? -->
+          <div class="faq-item is-open">
+            <button type="button" class="faq-trigger" aria-expanded="true">
+              <span>What is Forge?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Forge is a daily self-improvement system designed to help you build yourself across four connected areas: <strong>Physique</strong>, <strong>Confidence</strong>, <strong>Discipline</strong>, and <strong>Growth</strong>.
+                  </p>
+                  <p>
+                    Instead of having separate apps for workouts, habits, hydration, and goal setting, Forge connects those actions into a single daily workflow that turns who you want to become into what you do every day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2: Who is Forge for? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Who is Forge for?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Forge is built for people who want to become stronger, healthier, more confident, and more disciplined.
+                  </p>
+                  <p>
+                    It is designed for those who are tired of restarting every Monday, saving workout videos they never do, and trying to manage ten disconnected apps or notes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3: Is Forge only a fitness app? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Is Forge only a fitness app?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    No. While structured physical training is central, Forge is built on the understanding that a stronger body without confidence and discipline is incomplete.
+                  </p>
+                  <p>
+                    Forge pairs workouts with daily confidence exercises (like posture resets and vocal clarity), habit streaks, recovery tracking, and a unified System Readiness score.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 2: THE SYSTEM -->
+        <div class="faq-category-group reveal">
+          <div class="faq-category-header">
+            <h2 class="faq-category-title">The System</h2>
+            <span class="faq-category-tag">HOW IT WORKS</span>
+          </div>
+
+          <!-- Q4: What can I use Forge for? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>What can I use Forge for?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>You can use Forge to:</p>
+                  <ul style="margin: var(--space-2) 0 var(--space-2) var(--space-4); display: flex; flex-direction: column; gap: 4px;">
+                    <li>Follow structured daily strength routines with progressive overload targets (+2.5 kg).</li>
+                    <li>Hit simple daily nutrition benchmarks: protein, calories, and hydration.</li>
+                    <li>Complete daily confidence and posture drills to build authentic presence.</li>
+                    <li>Maintain unbroken consistency streaks on your core non-negotiable habits.</li>
+                    <li>Track your 28-day adherence matrix to visually verify compounding growth.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5: How does Forge help with consistency? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How does Forge help with consistency?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Forge eliminates decision fatigue by giving you a clear, manageable plan each morning. You don't have to think about what to do in the gym or how to structure your day.
+                  </p>
+                  <p>
+                    By focusing on four core daily actions and frictionless logging (under 30 seconds), Forge lowers the barrier to showing up on busy, low-motivation days.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 3: FEATURES -->
+        <div class="faq-category-group reveal">
+          <div class="faq-category-header">
+            <h2 class="faq-category-title">Features</h2>
+            <span class="faq-category-tag">CAPABILITIES</span>
+          </div>
+
+          <!-- Q6: Does Forge include workouts? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Does Forge include workouts?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. Forge includes structured strength training routines organized into focused movement splits (Upper Push, Lower Pull, Core).
+                  </p>
+                  <p>
+                    Workouts are concise (35-45 minutes, 4 key movements) with built-in progressive overload tracking (+2.5 kg increases) and rest timers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q7: Does Forge include nutrition? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Does Forge include nutrition?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. Forge focuses on the essential metrics that drive 90% of body composition results: daily protein target (e.g. 140g), overall calories, and hydration (2.5L).
+                  </p>
+                  <p>
+                    No tedious scanning of every ingredient — just rapid, high-signal logging in seconds.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q8: Does Forge include sleep and recovery? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Does Forge include sleep and recovery?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. Real recovery is where adaptation happens. Forge tracks your sleep duration, evening screen shutdown discipline, and calculates a morning System Readiness baseline (e.g. 84/100).
+                  </p>
+                  <p>
+                    This score tells you whether today is a day to push hard with progressive weights or focus on recovery.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q9: How does personalization work? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How does personalization work?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Personalization in Forge is grounded in real baseline data. When you set up your profile, Forge calibrates your training experience, current body weight, and priority goal.
+                  </p>
+                  <p>
+                    From there, your progressive overload increments (+2.5 kg), daily protein targets, and recovery targets are mathematically aligned with your actual capacity and logged performance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 4: GETTING STARTED -->
+        <div class="faq-category-group reveal">
+          <div class="faq-category-header">
+            <h2 class="faq-category-title">Getting Started</h2>
+            <span class="faq-category-tag">ACCESS</span>
+          </div>
+
+          <!-- Q10: Is Forge free? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Is Forge free?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Early access to the Forge foundation and daily tracking system is free for our initial cohort of members.
+                  </p>
+                  <p>
+                    As the platform expands, advanced coaching analytics and deep progressive programming will be offered as optional premium features, while core daily tracking remains accessible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Q11: Where can I get Forge? -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Where can I get Forge?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Forge is currently in early access. You can join the early access queue directly through our waitlist on this website by clicking <strong>Download Forge</strong> or entering your email below.
+                  </p>
+                  <p>
+                    Native mobile applications for iOS and Android are actively in development for upcoming release.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ CTA BLOCK -->
+        <div class="faq-cta-block reveal">
+          <h3>Ready to start building?</h3>
+          <p class="body-lead" style="margin-bottom: var(--space-6);">
+            Get early access to Forge and start building your physique, confidence, and discipline today.
+          </p>
+          <a href="/download.html" class="btn btn-primary" data-download-cta>
+            <span>DOWNLOAD FORGE</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================
+       FOOTER
+  ================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Statement -->
+        <div class="footer-brand-col">
+          <a href="/" class="brand-lockup" aria-label="Forge Homepage">
+            <svg viewBox="18 16 64 56" fill="none" class="forge-logo-svg" role="img" aria-label="Forge logo">
+              <path d="M30 63 L40 49 L43 54" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M39 63 L53 44 L68 63" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M53 44 L53 28" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/>
+              <path d="M53 26 L68 30 L62 34 L68 39 L53 39 Z" fill="currentColor"/>
+            </svg>
+            <span class="brand-wordmark">FORGE</span>
+          </a>
+          <p class="footer-tagline">
+            BUILD YOURSELF.
+          </p>
+        </div>
+
+        <!-- Col 2: Explore -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">EXPLORE</h4>
+          <ul class="footer-links-list">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/features" class="footer-link">Features</a></li>
+            <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
+            <li><a href="/about" class="footer-link">About</a></li>
+            <li><a href="/faq" class="footer-link is-active">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Build -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">BUILD</h4>
+          <ul class="footer-links-list">
+            <li><a href="/download.html" class="footer-link" data-download-cta>Download Forge</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Stay Updated -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">STAY UPDATED</h4>
+          <form class="newsletter-form footer-newsletter-form" id="footer-newsletter-form" novalidate>
+            <div class="footer-input-group">
+              <input
+                type="email"
+                class="newsletter-input footer-newsletter-input"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+                aria-label="Your email address"
+              >
+              <button type="submit" class="btn btn-secondary footer-newsletter-btn">
+                <span>GET UPDATES</span>
+              </button>
+            </div>
+            <div class="newsletter-feedback footer-newsletter-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <span class="footer-bottom-brand">FORGE · BUILD YOURSELF.</span>
+        <span class="footer-bottom-copy">&copy; 2026 FORGE. ALL RIGHTS RESERVED.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initMobileNav } from '/src/js/mobile-nav.js';
+    import { initScrollReveal } from '/src/js/scroll-reveal.js';
+    import { initDownloadCTA } from '/src/js/download-cta.js';
+    import { initEmailForm } from '/src/js/email-service.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initMobileNav();
+      initScrollReveal();
+      initDownloadCTA();
+      initEmailForm('.newsletter-form');
+
+      // Accordion interactive behavior
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        if (!trigger) return;
+
+        trigger.addEventListener('click', () => {
+          const isOpen = item.classList.contains('is-open');
+          
+          // Optional: close other open items in the same category for clean accordion experience
+          const parentGroup = item.closest('.faq-category-group');
+          if (parentGroup) {
+            parentGroup.querySelectorAll('.faq-item.is-open').forEach(openItem => {
+              if (openItem !== item) {
+                openItem.classList.remove('is-open');
+                const t = openItem.querySelector('.faq-trigger');
+                if (t) t.setAttribute('aria-expanded', 'false');
+              }
+            });
+          }
+
+          if (isOpen) {
+            item.classList.remove('is-open');
+            trigger.setAttribute('aria-expanded', 'false');
+          } else {
+            item.classList.add('is-open');
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Sticky header background
+      const header = document.getElementById('site-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }, { passive: true });
+    });
+  </script>
+</body>
+</html>
