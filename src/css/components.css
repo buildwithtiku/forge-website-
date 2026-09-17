@@ -965,16 +965,100 @@
 }
 
 @media (max-width: 768px) {
+  .site-header {
+    height: var(--navbar-height, 68px);
+  }
+
+  .header-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .brand-lockup {
+    gap: 8px;
+  }
+
   .nav-desktop {
     display: none;
   }
 
+  .nav-actions {
+    gap: 8px;
+  }
+
+  #nav-cta {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    border-radius: var(--radius-sm);
+  }
+
   .menu-toggle {
     display: flex;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .mobile-nav-drawer {
+    top: var(--navbar-height, 68px);
+    height: calc(100dvh - var(--navbar-height, 68px));
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: var(--space-6) 16px var(--space-8);
   }
 
   .mobile-nav-drawer.is-open {
     display: flex;
+  }
+
+  .mobile-nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 1.35rem;
+  }
+
+  .mobile-nav-footer {
+    padding-top: var(--space-6);
+    width: 100%;
+  }
+
+  .mobile-drawer-cta {
+    min-height: 48px;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.875rem;
+  }
+
+  .container,
+  .container-editorial,
+  .container-narrow {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Prevent auto-zoom on iOS */
+  input[type="email"],
+  .newsletter-input,
+  .footer-newsletter-input {
+    font-size: 16px !important;
+  }
+
+  .pillars-device-col .device-frame-wrapper {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .timeline-line {
@@ -995,6 +1079,48 @@
 
   .progress-meta-row {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Extra narrow mobile screens (e.g. 320px - 360px) */
+@media (max-width: 360px) {
+  .header-container {
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 6px;
+  }
+
+  .brand-lockup {
+    gap: 6px;
+  }
+
+  .forge-logo-svg {
+    width: 24px;
+    height: 20px;
+  }
+
+  .brand-wordmark {
+    font-size: 0.925rem;
+  }
+
+  #nav-cta {
+    padding: 0.42rem 0.65rem;
+    font-size: 0.6875rem;
+  }
+
+  #nav-cta .btn-arrow {
+    display: none;
+  }
+
+  .menu-toggle {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+
+  .pillars-device-col .device-frame-wrapper {
+    max-width: 280px;
   }
 }
 

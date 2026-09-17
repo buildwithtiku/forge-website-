@@ -463,7 +463,14 @@
 -------------------------------------------------- */
 @media (max-width: 600px) {
   .download-main {
-    padding-inline: 20px;
+    padding-inline: 16px;
+    padding-top: calc(var(--navbar-height, 68px) + var(--space-6));
+    padding-bottom: var(--space-10);
+  }
+
+  .download-headline {
+    font-size: clamp(2rem, 8vw, 3rem);
+    word-break: break-word;
   }
 
   .form-row {
@@ -471,13 +478,46 @@
     gap: 10px;
   }
 
+  .download-input {
+    font-size: 16px !important;
+    min-height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .download-submit-btn {
     width: 100%;
+    min-height: 48px;
     justify-content: center;
   }
 
   .store-badge-disabled {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .android-card {
+    padding: 20px 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .download-form-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .download-main {
+    padding-inline: 12px;
+  }
+
+  .download-headline {
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
+  }
+
+  .android-card {
+    padding: 16px 12px;
   }
 }

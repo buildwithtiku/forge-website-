@@ -488,8 +488,8 @@ body {
   .about-formula-section,
   .about-real-life-section,
   .about-audience-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .about-real-life-wrap,
@@ -514,22 +514,53 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .about-hero {
+    padding-top: calc(var(--navbar-height, 68px) + var(--space-8));
+    padding-bottom: var(--space-12);
+  }
+
+  .about-hero .headline-hero {
+    font-size: clamp(2.15rem, 8vw, 3.5rem);
+    word-break: break-word;
+  }
+
+  .about-problem-section,
+  .about-why-section,
+  .about-pillars-section,
+  .about-formula-section,
+  .about-real-life-section,
+  .about-audience-section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+}
+
 @media (max-width: 640px) {
   .about-connected-box {
     grid-template-columns: 1fr;
+    gap: var(--space-3);
   }
 
   .formula-card-wrap {
     padding: var(--space-6) var(--space-4);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .pillar-seq-item {
     grid-template-columns: 1fr;
     gap: var(--space-2);
-    padding: 28px 0;
+    padding: 24px 0;
   }
 
   .pillar-seq-meta {
     grid-column: 1;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-hero .headline-hero {
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
   }
 }

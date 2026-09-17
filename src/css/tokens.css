@@ -115,18 +115,18 @@
 /* Mobile: below 768px */
 @media (max-width: 767px) {
   :root {
-    --navbar-height: 72px;
-    --header-height: 72px;
-    --navbar-safe-gap: 48px;
-    --forge-page-padding: 20px;
-    --section-gap-sm: 32px;
-    --section-gap-md: 48px;
-    --section-gap-lg: 64px;
-    --section-gap-major: 80px;
-    --section-gap-hero: 96px;
-    --space-24: 4rem;
-    --space-32: 5rem;
-    --space-40: 6rem;
+    --navbar-height: 68px;
+    --header-height: 68px;
+    --navbar-safe-gap: 36px;
+    --forge-page-padding: 16px;
+    --section-gap-sm: 28px;
+    --section-gap-md: 40px;
+    --section-gap-lg: 56px;
+    --section-gap-major: 72px;
+    --section-gap-hero: 84px;
+    --space-24: 3.5rem;
+    --space-32: 4.5rem;
+    --space-40: 5.5rem;
     --track-change-height: 200vh;
     --track-problem-height: 220vh;
     --track-pillars-height: 320vh;
